@@ -13,8 +13,8 @@ public class LocalAndGlobalVariables {
 
 		// Local Variables :
 
-		int i = 10;
-		System.out.println(i);
+		int ageOfRajan = 10;
+		System.out.println(ageOfRajan);
 
 		LocalAndGlobalVariables obj = new LocalAndGlobalVariables();
 		System.out.println(obj.name);
@@ -26,8 +26,8 @@ public class LocalAndGlobalVariables {
 
 		// Local Variables :
 
-		int i = 10;
-		int j = 20;
+		int ageOFRaj = 10;
+		
 
 	}
 
