@@ -72,27 +72,27 @@ public class ArrayAssessment {
 
 		for (int gesture = 0; gesture < name.length; gesture++) {
 			System.out.println(name[gesture]);
+		}
 
-			// In array all elements must be of same type. Thus Object array is
-			// used in this case.
+		// In array all elements must be of same type. Thus Object array is
+		// used in this case.
 
-			// Object array
+		// Object array
 
-			Object sent[] = new Object[4];
+		Object sent[] = new Object[4];
 
-			sent[0] = "height of Sachin";
-			sent[1] = '=';
-			sent[2] = 171.8;
-			sent[3] = true;
+		sent[0] = "height of Sachin";
+		sent[1] = '=';
+		sent[2] = 171.8;
+		sent[3] = true;
 
-			for (int full = 0; full < 4; full++) {
-				System.out.println(sent[full]);
-
-			}
-			
-			// In array size is fixed. Thus dynamic array/Collections are used such as Arraylist, Hashtable.  
+		for (int full = 0; full < sent.length; full++) {
+			System.out.println(sent[full]);
 
 		}
+
+		// In array size is fixed. Thus dynamic array/Collections are used such
+		// as Arraylist, Hashtable.
 
 	}
 
