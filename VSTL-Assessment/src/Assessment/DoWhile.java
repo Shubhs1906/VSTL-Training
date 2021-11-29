@@ -31,12 +31,14 @@ public class DoWhile {
 		// do-while loop: statement executes for at least one time either
 		// condition satisfies or not.
 
-		int intGreet = 0;
+		int intGreet = 2;
 
 		do {
 			System.out.println(strFor[intGreet]);
-			intGreet++;
-		} while (intGreet > 3);
+			intGreet--;
+		} while (intGreet < -1);
+
+		System.out.println("********");
 
 	}
 

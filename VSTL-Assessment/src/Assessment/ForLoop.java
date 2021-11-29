@@ -23,6 +23,7 @@ public class ForLoop {
 
 			System.out.println(intWeight[intAll]);
 		}
+		System.out.println("********");
 
 	}
 
