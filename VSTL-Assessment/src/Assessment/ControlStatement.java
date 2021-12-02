@@ -1,6 +1,7 @@
 package Assessment;
 
 public class ControlStatement {
+	
 	public void resultPassOrFail(int intMarks) {
 
 		// Control Statement
