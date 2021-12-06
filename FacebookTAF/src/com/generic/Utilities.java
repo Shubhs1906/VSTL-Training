@@ -70,13 +70,30 @@ public class Utilities {
 	}
 
 	public String getNewPassword(int length) {
-		String getNewPassword = "QWERTYUIOPASDFGHJKLZXCVBNMqwertyuiopasdfghjklzxcvbnm7894561230!@#$&";
+		String getNewPassword = "QWERTYUIOPASDFGHJKLZXCVBNMqwertyuiopasdfghjklzxcvbnm";
 		String randomString = "";
 		for (int index = 0; index < length; index++) {
 			int rnum = (int) Math.floor((Math.random() * getNewPassword.length()));
 			randomString += getNewPassword.substring(rnum, rnum + 1);
 		}
-		return randomString;
+		//
+		String[] strValues = { "@", "!", "&" };
+		Random passwordChar = new Random();
+		int randomId = passwordChar.nextInt(strValues.length);
+		String strId;
+		String strRandomChar = strValues[randomId];
+		//
+		String getRandomNum = "7894561230";
+		String getRandomN = "";
+		for (int index = 0; index < length; index++) {
+			int rnum = (int) Math.floor((Math.random() * getRandomNum.length()));
+			randomString += getRandomNum.substring(rnum, rnum + 1);
+		}
+		//
+
+		String getRandomPass = randomString + strRandomChar + getRandomN;
+
+		return getRandomPass;
 
 	}
 
