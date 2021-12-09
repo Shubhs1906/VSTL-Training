@@ -60,7 +60,7 @@ public class Utilities {
 		String[] strValues = { "@vervesquare.com", "@yahoo.com", "@gmail.com" };
 		Random MailId = new Random();
 		int randomId = MailId.nextInt(strValues.length);
-		String strId;
+		
 		String strRandomId = strValues[randomId];
 		//
 
@@ -80,7 +80,7 @@ public class Utilities {
 		String[] strValues = { "@", "!", "&" };
 		Random passwordChar = new Random();
 		int randomId = passwordChar.nextInt(strValues.length);
-		String strId;
+		
 		String strRandomChar = strValues[randomId];
 		//
 		String getRandomNum = "7894561230";
