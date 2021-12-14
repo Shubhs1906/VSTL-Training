@@ -26,13 +26,28 @@ public class SeleniumWrapperFunctions {
 		objBaseTest.getDriver().findElement(locator).click();
 		System.out.println("click : ");
 	}
-	
-	public void Select (By locator, String strInputDropDown  ) {
-		
+
+	public void selectByIndex(By locator, int intInputDropDown) {
+
 		WebElement element = objBaseTest.getDriver().findElement(locator);
 		Select dropDown = new Select(element);
-		dropDown.selectByVisibleText(strInputDropDown);
-		
+		dropDown.selectByIndex(intInputDropDown);
+
+	}
+
+	public void selectByVisibleText(By locator, String strInputDropDown_1) {
+
+		WebElement element = objBaseTest.getDriver().findElement(locator);
+		Select dropDown = new Select(element);
+		dropDown.selectByVisibleText(strInputDropDown_1);
+
+	}
+
+	public void selectByValue(By locator, String strInputDropDown_2) {
+
+		WebElement element = objBaseTest.getDriver().findElement(locator);
+		Select dropDown = new Select(element);
+		dropDown.selectByValue(strInputDropDown_2);
 	}
 
 }

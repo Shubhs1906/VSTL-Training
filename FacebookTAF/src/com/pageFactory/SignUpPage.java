@@ -23,6 +23,12 @@ public class SignUpPage {
 	By loc_inpemailAdd = By.xpath("//input[@name='reg_email__']");
 	By loc_setPassword = By.xpath("//input[@aria-label='New password']");
 	By loc_inpemailAddAgain = By.xpath("//input[@aria-label='Re-enter email address']");
+	By loc_inpBirthDate = By.xpath("//select[@aria-label='Day']");
+	By loc_inpBirthMonth = By.xpath("//select[@aria-label='Month']");
+	By loc_inpBirthYear = By.xpath("//select[@aria-label='Year']");
+	By loc_inpMaleGender = By.xpath("//*[contains(text(),'Male')]");
+	By loc_inpFemaleGender = By.xpath("//*[contains(text(),'Female')]");
+	By loc_inpCustomGender = By.xpath("");
 
 	public void selectCreateNewAccount() {
 		objBaseTest.getObjSeleniumWrapperFunctions().click(loc_clickCreateNewAcc);
@@ -89,9 +95,8 @@ public class SignUpPage {
 	}
 
 	public void enterBirthDate(int intBirthDate) {
-		
-		objBaseTest.getObjSeleniumWrapperFunctions().Select(locator, intBirthDate);
-		//objBaseTest.getObjSeleniumWrapperFunctions().setText(loc_inpFirstName, strFirstName);
+
+		objBaseTest.getObjSeleniumWrapperFunctions().selectByIndex(loc_inpBirthDate, intBirthDate);
 
 		if (intBirthDate > 0 && intBirthDate < 31)
 			System.out.print("Date of Birth: " + intBirthDate);
@@ -100,33 +105,46 @@ public class SignUpPage {
 
 	}
 
-	public void enterBirthMonth(String strBirthMonth) {
+	public void enterBirthMonth(String strGetBirthMonth) {
 
-		String strMonths[] = { "jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec" };
+		objBaseTest.getObjSeleniumWrapperFunctions().selectByVisibleText(loc_inpBirthMonth, strGetBirthMonth);
 
-		for (String element : strMonths) {
-			if (element.equalsIgnoreCase(strBirthMonth))
-				System.out.print(" " + strBirthMonth);
-
-		}
-
-	}
-
-	public void enterBirthYear(int intBirthYear) {
-		if (intBirthYear > 1905 && intBirthYear <= 2021)
-			System.out.println(" " + intBirthYear);
-		else
-			System.out.println(" Please make sure that you use your real date of birth .");
+		/*
+		 * String strMonths[] = { "Jan", "Feb", "Mar", "Apr", "May", "Jun",
+		 * "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" };
+		 * 
+		 * for (String element : strMonths) { if
+		 * (element.equalsIgnoreCase(strGetBirthMonth)) System.out.print(" " +
+		 * strGetBirthMonth);
+		 * 
+		 * }
+		 */
 
 	}
 
-	public void selectGender(String strGender) {
-		String strAllGender[] = { "custom", "female", "male" };
+	public void enterBirthYear(String strGetBirthYear) {
 
-		for (String element : strAllGender) {
-			if (element.equalsIgnoreCase(strGender))
-				System.out.println("Gender: " + strGender);
-		}
+		objBaseTest.getObjSeleniumWrapperFunctions().selectByValue(loc_inpBirthYear, strGetBirthYear);
+
+		/*
+		 * if (intBirthYear > 1905 && intBirthYear <= 2021)
+		 * System.out.println(" " + intBirthYear); else System.out.
+		 * println(" Please make sure that you use your real date of birth .");
+		 */
+
+	}
+
+	public void selectGender(String strGetGender) {
+
+		String strAllGender[] = { "Custom", "Female", "Male" };
+
+			
+			if (strGetGender.equalsIgnoreCase("Male"))
+				objBaseTest.getObjSeleniumWrapperFunctions().click(loc_inpMaleGender);
+			else if (strGetGender.equalsIgnoreCase("Female"))
+				objBaseTest.getObjSeleniumWrapperFunctions().click(loc_inpFemaleGender);
+			
+		
 
 	}
 

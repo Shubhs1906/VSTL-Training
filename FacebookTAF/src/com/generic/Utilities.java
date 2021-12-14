@@ -60,7 +60,7 @@ public class Utilities {
 		String[] strValues = { "@vervesquare.com", "@yahoo.com", "@gmail.com" };
 		Random MailId = new Random();
 		int randomId = MailId.nextInt(strValues.length);
-		
+
 		String strRandomId = strValues[randomId];
 		//
 
@@ -80,7 +80,7 @@ public class Utilities {
 		String[] strValues = { "@", "!", "&" };
 		Random passwordChar = new Random();
 		int randomId = passwordChar.nextInt(strValues.length);
-		
+
 		String strRandomChar = strValues[randomId];
 		//
 		String getRandomNum = "7894561230";
@@ -99,12 +99,9 @@ public class Utilities {
 
 	public int getBirthDate(int getBirthDate) {
 
-		String[] strValues = { "1", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" };
-		Random monthValue = new Random();
-		int randomMonth = monthValue.nextInt(strValues.length);
+		getBirthDate = ThreadLocalRandom.current().nextInt(1, 31);
 
-		strGetBirthMonth = strValues[randomMonth];
-		return strGetBirthMonth;
+		return getBirthDate;
 
 	}
 
@@ -119,15 +116,17 @@ public class Utilities {
 
 	}
 
-	public int getBirthYear(int getBirthYear) {
+	public String getBirthYear(String strGetBirthYear) {
 
-		getBirthYear = ThreadLocalRandom.current().nextInt(1905, 2021);
-		return getBirthYear;
+		int intBirthYear = ThreadLocalRandom.current().nextInt(1905, 2021);
+
+		strGetBirthYear = String.valueOf(intBirthYear);
+		return strGetBirthYear;
 	}
 
 	public String getGender(String strGetGender) {
 
-		String[] strValues = { "Male", "Female", "Custom" };
+		String[] strValues = { "Male", "Female" };
 		Random genderValue = new Random();
 		int randomGender = genderValue.nextInt(strValues.length);
 
@@ -136,13 +135,6 @@ public class Utilities {
 
 	}
 
-	/*
-	 * public String getRandomStrings(int length) { String strValue =
-	 * "QWERTYUIOPASDFGHJKLZXCVBNMqwertyuiopasdfghjklzxcvbnm"; String
-	 * randomString = ""; for (int index = 0; index < length; index++) { int
-	 * rnum = (int) Math.floor((Math.random() * strValue.length()));
-	 * randomString += strValue.substring(rnum, rnum + 1); } return
-	 * randomString; }
-	 */
+	
 
 }

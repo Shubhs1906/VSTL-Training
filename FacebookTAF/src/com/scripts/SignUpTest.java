@@ -9,10 +9,9 @@ import com.generic.Utilities;
 public class SignUpTest extends BaseTest {
 
 	private static int getBirthDate;
-	private static int getBirthYear;
 	private static String strGetGender;
 	private static String strGetBirthMonth;
-
+	private static String GetBirthYear;
 	static WebDriver driver = null;
 
 	public void beforeMainMethod() {
@@ -30,7 +29,7 @@ public class SignUpTest extends BaseTest {
 		String strEmailAddress = objUtilities.getEmailAddress(8);
 		String strNewPassword = objUtilities.getNewPassword(4);
 		int intBirthDate = objUtilities.getBirthDate(getBirthDate);
-		int intBirthYear = objUtilities.getBirthYear(getBirthYear);
+		String strBirthYear = objUtilities.getBirthYear(GetBirthYear);
 		String strGender = objUtilities.getGender(strGetGender);
 		String strBirthMonth = objUtilities.GetBirthMonth(strGetBirthMonth);
 
@@ -43,16 +42,12 @@ public class SignUpTest extends BaseTest {
 		// objSignUpPage.enterMobileNumber(strMobileNumber);
 		objSignUpPage.EmailAddress(strEmailAddress);
 		objSignUpPage.SetNewPassword(strNewPassword);
+		objSignUpPage.enterBirthDate(intBirthDate);
+		objSignUpPage.enterBirthMonth(strBirthMonth);
+		objSignUpPage.enterBirthYear(strBirthYear);
+		objSignUpPage.selectGender(strGender);
 
 		/*
-		 * 
-		 * objSignUpPage.enterBirthDate(intBirthDate);
-		 * 
-		 * objSignUpPage.enterBirthMonth(strBirthMonth);
-		 * 
-		 * objSignUpPage.enterBirthYear(intBirthYear);
-		 * 
-		 * objSignUpPage.selectGender(strGender);
 		 * 
 		 * System.out.println("");
 		 * 
