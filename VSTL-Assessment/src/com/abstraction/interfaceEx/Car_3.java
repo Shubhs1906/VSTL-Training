@@ -1,10 +1,11 @@
-package com.abstraction.abstractClass;
+package com.abstraction.interfaceEx;
 
-public class Car_3 extends GetCarDetails {
+public class Car_3 implements GetCarDetails {
 
 	@Override
 	public void brand() {
 		System.out.println("Hyundai ");
+
 	}
 
 	@Override
@@ -28,6 +29,12 @@ public class Car_3 extends GetCarDetails {
 	@Override
 	public void colour() {
 		System.out.println("Polar White");
+
+	}
+
+	@Override
+	public void other() {
+		// TODO Auto-generated method stub
 
 	}
 

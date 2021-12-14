@@ -1,10 +1,10 @@
 package com.scripts;
 
 import org.openqa.selenium.WebDriver;
-
-import com.generic.BaseTest;
-import com.generic.Utilities;
 import com.pageFactory.SignUpPage;
+import com.generic.BaseTest;
+import com.generic.SeleniumWrapperFunctions;
+import com.generic.Utilities;
 
 public class SignUpTest extends BaseTest {
 
@@ -13,26 +13,17 @@ public class SignUpTest extends BaseTest {
 	private static String strGetGender;
 	private static String strGetBirthMonth;
 
+	static WebDriver driver = null;
+
 	public void beforeMainMethod() {
+
 		this.itializeWebEnvironment();
-		// SignUpPage objSignUpPage = new SignUpPage(this);
-		// objSignUpPage.enterFirstName(strFirstName);
+		SignUpPage objSignUpPage = new SignUpPage(this);
+		objSignUpPage.selectCreateNewAccount();
 
-	}
+		// ###############
 
-	public void afterMethod() {
-		this.tearDown();
-
-	}
-
-	public static void main(String[] args) {
-
-		SignUpTest objSignUpTest = new SignUpTest();
 		Utilities objUtilities = new Utilities();
-		SignUpPage objSignUpPage = new SignUpPage(objSignUpTest);
-
-		objSignUpTest.beforeMainMethod();
-
 		String strFirstName = objUtilities.getFirstName(6);
 		String strSurname = objUtilities.getSurname(6);
 		String strMobileNumber = objUtilities.getMobileNumber(8);
@@ -47,11 +38,9 @@ public class SignUpTest extends BaseTest {
 		System.out.println("Sign Up It's quick and easy");
 		System.out.println("");
 
-		// objSignUpPage.selectCreateNewAccount();
-
 		objSignUpPage.enterFirstName(strFirstName);
 		objSignUpPage.enterSurname(strSurname);
-		//objSignUpPage.enterMobileNumber(strMobileNumber);
+		// objSignUpPage.enterMobileNumber(strMobileNumber);
 		objSignUpPage.EmailAddress(strEmailAddress);
 		objSignUpPage.SetNewPassword(strNewPassword);
 
@@ -71,6 +60,20 @@ public class SignUpTest extends BaseTest {
 		 * 
 		 * // objSignUpTest.afterMethod();
 		 */
+		// ###############
+
+	}
+
+	public void afterMethod() {
+		this.tearDown();
+
+	}
+
+	public static void main(String[] args) {
+
+		SignUpTest objSignUpTest = new SignUpTest();
+
+		objSignUpTest.beforeMainMethod();
 
 	}
 

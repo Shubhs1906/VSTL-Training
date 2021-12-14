@@ -99,8 +99,12 @@ public class Utilities {
 
 	public int getBirthDate(int getBirthDate) {
 
-		getBirthDate = ThreadLocalRandom.current().nextInt(1, 31);
-		return getBirthDate;
+		String[] strValues = { "1", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" };
+		Random monthValue = new Random();
+		int randomMonth = monthValue.nextInt(strValues.length);
+
+		strGetBirthMonth = strValues[randomMonth];
+		return strGetBirthMonth;
 
 	}
 

@@ -1,5 +1,6 @@
 package com.generic;
 
+import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -17,14 +18,14 @@ public class BaseTest {
 		ObjSeleniumWrapperFunctions = new SeleniumWrapperFunctions(this);
 		this.setObjSeleniumWrapperFunctions(ObjSeleniumWrapperFunctions);
 		driver.get(strURL);
-		System.out.println("Open URL : " + strURL);
 		driver.manage().window().maximize();
+		driver.manage().deleteAllCookies();
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		System.out.println("Title : " + driver.getTitle());
 		System.out.println("CurrentURL : " + driver.getCurrentUrl());
 		try {
-			Thread.sleep(5000);
+			Thread.sleep(10000);
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 

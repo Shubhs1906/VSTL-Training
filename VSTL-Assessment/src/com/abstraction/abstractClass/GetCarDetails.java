@@ -1,7 +1,7 @@
 package com.abstraction.abstractClass;
 
 public abstract class GetCarDetails {
-	
+
 	public abstract void brand();
 
 	public abstract void segment();
