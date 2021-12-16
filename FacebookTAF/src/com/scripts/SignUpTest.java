@@ -1,6 +1,9 @@
 package com.scripts;
 
 import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
 import com.pageFactory.SignUpPage;
 import com.generic.BaseTest;
 import com.generic.SeleniumWrapperFunctions;
@@ -14,62 +17,94 @@ public class SignUpTest extends BaseTest {
 	private static String GetBirthYear;
 	static WebDriver driver = null;
 
+	private SignUpPage objSignUpPage;
+
+	private Utilities objUtilities = new Utilities();
+	String strFirstName = objUtilities.getFirstName(6);
+	String strSurname = objUtilities.getSurname(6);
+	String strMobileNumber = objUtilities.getMobileNumber(8);
+	String strEmailAddress = objUtilities.getEmailAddress(8);
+	String strNewPassword = objUtilities.getNewPassword(4);
+	int intBirthDate = objUtilities.getBirthDate(getBirthDate);
+	String strBirthYear = objUtilities.getBirthYear(GetBirthYear);
+	String strGender = objUtilities.getGender(strGetGender);
+	String strBirthMonth = objUtilities.GetBirthMonth(strGetBirthMonth);
+
+	@BeforeClass
 	public void beforeMainMethod() {
 
 		this.itializeWebEnvironment();
-		SignUpPage objSignUpPage = new SignUpPage(this);
-		objSignUpPage.selectCreateNewAccount();
-
-		// ###############
-
-		Utilities objUtilities = new Utilities();
-		String strFirstName = objUtilities.getFirstName(6);
-		String strSurname = objUtilities.getSurname(6);
-		String strMobileNumber = objUtilities.getMobileNumber(8);
-		String strEmailAddress = objUtilities.getEmailAddress(8);
-		String strNewPassword = objUtilities.getNewPassword(4);
-		int intBirthDate = objUtilities.getBirthDate(getBirthDate);
-		String strBirthYear = objUtilities.getBirthYear(GetBirthYear);
-		String strGender = objUtilities.getGender(strGetGender);
-		String strBirthMonth = objUtilities.GetBirthMonth(strGetBirthMonth);
-
-		System.out.println("");
-		System.out.println("Sign Up It's quick and easy");
-		System.out.println("");
-
-		objSignUpPage.enterFirstName(strFirstName);
-		objSignUpPage.enterSurname(strSurname);
-		// objSignUpPage.enterMobileNumber(strMobileNumber);
-		objSignUpPage.EmailAddress(strEmailAddress);
-		objSignUpPage.SetNewPassword(strNewPassword);
-		objSignUpPage.enterBirthDate(intBirthDate);
-		objSignUpPage.enterBirthMonth(strBirthMonth);
-		objSignUpPage.enterBirthYear(strBirthYear);
-		objSignUpPage.selectGender(strGender);
-
-		/*
-		 * 
-		 * System.out.println("");
-		 * 
-		 * System.out.println("        Sign Up");
-		 * 
-		 * // objSignUpTest.afterMethod();
-		 */
-		// ###############
+		objSignUpPage = new SignUpPage(this);
 
 	}
 
+	@AfterClass
 	public void afterMethod() {
 		this.tearDown();
 
 	}
 
-	public static void main(String[] args) {
+	@Test(priority=1)
+	public void test_01() {
 
-		SignUpTest objSignUpTest = new SignUpTest();
-
-		objSignUpTest.beforeMainMethod();
+		objSignUpPage.selectCreateNewAccount();
 
 	}
+
+	@Test(priority=2)
+	public void test_02() {
+		objSignUpPage.enterFirstName(strFirstName);
+		objSignUpPage.enterSurname(strSurname);
+
+	}
+
+	@Test(priority=3)
+	public void test_03() {
+		// objSignUpPage.enterMobileNumber(strMobileNumber);
+		objSignUpPage.EmailAddress(strEmailAddress);
+
+	}
+
+	@Test(priority=4)
+	public void test_04() {
+		objSignUpPage.SetNewPassword(strNewPassword);
+
+	}
+
+	@Test(priority=5)
+	public void test_05() {
+		objSignUpPage.enterBirthDate(intBirthDate);
+		objSignUpPage.enterBirthMonth(strBirthMonth);
+		objSignUpPage.enterBirthYear(strBirthYear);
+
+	}
+
+	@Test(priority=6)
+	public void test_06() {
+		objSignUpPage.selectGender(strGender);
+
+	}
+
+	/*
+	 * // objSignUpPage.selectCreateNewAccount(); //
+	 * objSignUpPage.enterFirstName(strFirstName);
+	 * objSignUpPage.enterSurname(strSurname); //
+	 * //objSignUpPage.enterMobileNumber(strMobileNumber);
+	 * objSignUpPage.EmailAddress(strEmailAddress);
+	 * objSignUpPage.SetNewPassword(strNewPassword);
+	 * objSignUpPage.enterBirthDate(intBirthDate);
+	 * objSignUpPage.enterBirthMonth(strBirthMonth);
+	 * objSignUpPage.enterBirthYear(strBirthYear);
+	 * objSignUpPage.selectGender(strGender);
+	 */
+	/*
+	 * public static void main(String[] args) {
+	 * 
+	 * SignUpTest objSignUpTest = new SignUpTest();
+	 * 
+	 * objSignUpTest.beforeMainMethod();
+	 * 
+	 * }
+	 */
 
 }
