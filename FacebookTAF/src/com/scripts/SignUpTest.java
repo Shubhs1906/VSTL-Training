@@ -102,8 +102,7 @@ public class SignUpTest extends BaseTest {
 	 * 
 	 * SignUpTest objSignUpTest = new SignUpTest();
 	 * 
-	 * objSignUpTest.beforeMainMethod();
-	 * 
+	 * objSignUpTest.beforeMainMethod(); 
 	 * }
 	 */
 
