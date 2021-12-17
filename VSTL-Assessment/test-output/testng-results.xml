@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="78" started-at="2021-12-17T03:10:11Z" finished-at="2021-12-17T03:10:11Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="78" started-at="2021-12-17T03:10:11Z" finished-at="2021-12-17T03:10:11Z">
+      <class name="com.TestNGAnnotations.AmazonEx">
+        <test-method status="PASS" signature="openApplication()[pri:0, instance:com.TestNGAnnotations.AmazonEx@6cc4c815]" name="openApplication" is-config="true" duration-ms="22" started-at="2021-12-17T03:10:11Z" finished-at="2021-12-17T03:10:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method status="PASS" signature="openOptions()[pri:0, instance:com.TestNGAnnotations.AmazonEx@6cc4c815]" name="openOptions" is-config="true" duration-ms="0" started-at="2021-12-17T03:10:11Z" finished-at="2021-12-17T03:10:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openOptions -->
+        <test-method status="PASS" signature="openSettings()[pri:0, instance:com.TestNGAnnotations.AmazonEx@6cc4c815]" name="openSettings" is-config="true" duration-ms="1" started-at="2021-12-17T03:10:11Z" finished-at="2021-12-17T03:10:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openSettings -->
+        <test-method status="PASS" signature="openProfile()[pri:0, instance:com.TestNGAnnotations.AmazonEx@6cc4c815]" name="openProfile" is-config="true" duration-ms="1" started-at="2021-12-17T03:10:11Z" finished-at="2021-12-17T03:10:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openProfile -->
+        <test-method status="PASS" signature="changeProfilePictureTest()[pri:1, instance:com.TestNGAnnotations.AmazonEx@6cc4c815]" name="changeProfilePictureTest" duration-ms="15" started-at="2021-12-17T03:10:11Z" finished-at="2021-12-17T03:10:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- changeProfilePictureTest -->
+        <test-method status="PASS" signature="closeProfile()[pri:0, instance:com.TestNGAnnotations.AmazonEx@6cc4c815]" name="closeProfile" is-config="true" duration-ms="1" started-at="2021-12-17T03:10:11Z" finished-at="2021-12-17T03:10:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeProfile -->
+        <test-method status="PASS" signature="openProfile()[pri:0, instance:com.TestNGAnnotations.AmazonEx@6cc4c815]" name="openProfile" is-config="true" duration-ms="0" started-at="2021-12-17T03:10:11Z" finished-at="2021-12-17T03:10:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openProfile -->
+        <test-method status="PASS" signature="changeUserIdTest()[pri:2, instance:com.TestNGAnnotations.AmazonEx@6cc4c815]" name="changeUserIdTest" duration-ms="4" started-at="2021-12-17T03:10:11Z" finished-at="2021-12-17T03:10:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- changeUserIdTest -->
+        <test-method status="PASS" signature="closeProfile()[pri:0, instance:com.TestNGAnnotations.AmazonEx@6cc4c815]" name="closeProfile" is-config="true" duration-ms="1" started-at="2021-12-17T03:10:11Z" finished-at="2021-12-17T03:10:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeProfile -->
+        <test-method status="PASS" signature="closeSettings()[pri:0, instance:com.TestNGAnnotations.AmazonEx@6cc4c815]" name="closeSettings" is-config="true" duration-ms="1" started-at="2021-12-17T03:10:11Z" finished-at="2021-12-17T03:10:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeSettings -->
+        <test-method status="PASS" signature="closeOptions()[pri:0, instance:com.TestNGAnnotations.AmazonEx@6cc4c815]" name="closeOptions" is-config="true" duration-ms="1" started-at="2021-12-17T03:10:11Z" finished-at="2021-12-17T03:10:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeOptions -->
+        <test-method status="PASS" signature="closeApplication()[pri:0, instance:com.TestNGAnnotations.AmazonEx@6cc4c815]" name="closeApplication" is-config="true" duration-ms="1" started-at="2021-12-17T03:10:11Z" finished-at="2021-12-17T03:10:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+      </class> <!-- com.TestNGAnnotations.AmazonEx -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

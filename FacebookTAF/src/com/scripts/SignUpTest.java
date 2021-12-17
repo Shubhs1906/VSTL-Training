@@ -45,34 +45,34 @@ public class SignUpTest extends BaseTest {
 	}
 
 	@Test(priority=1)
-	public void test_01() {
+	public void selectCreateNewAccountTest () {
 
 		objSignUpPage.selectCreateNewAccount();
 
 	}
 
 	@Test(priority=2)
-	public void test_02() {
+	public void inputNameTest () {
 		objSignUpPage.enterFirstName(strFirstName);
 		objSignUpPage.enterSurname(strSurname);
 
 	}
 
 	@Test(priority=3)
-	public void test_03() {
+	public void inputEmailAddressTest () {
 		// objSignUpPage.enterMobileNumber(strMobileNumber);
 		objSignUpPage.EmailAddress(strEmailAddress);
 
 	}
 
 	@Test(priority=4)
-	public void test_04() {
+	public void inputPasswordTest () {
 		objSignUpPage.SetNewPassword(strNewPassword);
 
 	}
 
 	@Test(priority=5)
-	public void test_05() {
+	public void inputDateTest () {
 		objSignUpPage.enterBirthDate(intBirthDate);
 		objSignUpPage.enterBirthMonth(strBirthMonth);
 		objSignUpPage.enterBirthYear(strBirthYear);
@@ -80,11 +80,27 @@ public class SignUpTest extends BaseTest {
 	}
 
 	@Test(priority=6)
-	public void test_06() {
+	public void selectGenderTest () {
 		objSignUpPage.selectGender(strGender);
 
 	}
 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	/*
 	 * // objSignUpPage.selectCreateNewAccount(); //
 	 * objSignUpPage.enterFirstName(strFirstName);

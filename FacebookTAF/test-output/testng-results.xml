@@ -1,21 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="34614" started-at="2021-12-16T13:19:23Z" finished-at="2021-12-16T13:19:58Z">
+  <suite name="Default suite" duration-ms="40318" started-at="2021-12-16T16:02:55Z" finished-at="2021-12-16T16:03:36Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="34614" started-at="2021-12-16T13:19:23Z" finished-at="2021-12-16T13:19:58Z">
+    <test name="Default test" duration-ms="40318" started-at="2021-12-16T16:02:55Z" finished-at="2021-12-16T16:03:36Z">
       <class name="com.scripts.SignUpTest">
-        <test-method status="PASS" signature="beforeMainMethod()[pri:0, instance:com.scripts.SignUpTest@6cc4c815]" name="beforeMainMethod" is-config="true" duration-ms="26971" started-at="2021-12-16T13:19:23Z" finished-at="2021-12-16T13:19:50Z">
+        <test-method status="PASS" signature="beforeMainMethod()[pri:0, instance:com.scripts.SignUpTest@6cc4c815]" name="beforeMainMethod" is-config="true" duration-ms="34037" started-at="2021-12-16T16:02:55Z" finished-at="2021-12-16T16:03:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMainMethod -->
-        <test-method status="PASS" signature="testSelectCreateNewAccount()[pri:0, instance:com.scripts.SignUpTest@6cc4c815]" name="testSelectCreateNewAccount" duration-ms="7284" started-at="2021-12-16T13:19:50Z" finished-at="2021-12-16T13:19:57Z">
+        <test-method status="PASS" signature="test_01()[pri:1, instance:com.scripts.SignUpTest@6cc4c815]" name="test_01" duration-ms="1790" started-at="2021-12-16T16:03:30Z" finished-at="2021-12-16T16:03:31Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testSelectCreateNewAccount -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.scripts.SignUpTest@6cc4c815]" name="afterMethod" is-config="true" duration-ms="282" started-at="2021-12-16T13:19:57Z" finished-at="2021-12-16T13:19:58Z">
+        </test-method> <!-- test_01 -->
+        <test-method status="PASS" signature="test_02()[pri:2, instance:com.scripts.SignUpTest@6cc4c815]" name="test_02" duration-ms="1857" started-at="2021-12-16T16:03:31Z" finished-at="2021-12-16T16:03:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_02 -->
+        <test-method status="PASS" signature="test_03()[pri:3, instance:com.scripts.SignUpTest@6cc4c815]" name="test_03" duration-ms="915" started-at="2021-12-16T16:03:33Z" finished-at="2021-12-16T16:03:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_03 -->
+        <test-method status="PASS" signature="test_04()[pri:4, instance:com.scripts.SignUpTest@6cc4c815]" name="test_04" duration-ms="219" started-at="2021-12-16T16:03:34Z" finished-at="2021-12-16T16:03:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_04 -->
+        <test-method status="PASS" signature="test_05()[pri:5, instance:com.scripts.SignUpTest@6cc4c815]" name="test_05" duration-ms="882" started-at="2021-12-16T16:03:34Z" finished-at="2021-12-16T16:03:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_05 -->
+        <test-method status="PASS" signature="test_06()[pri:6, instance:com.scripts.SignUpTest@6cc4c815]" name="test_06" duration-ms="186" started-at="2021-12-16T16:03:35Z" finished-at="2021-12-16T16:03:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_06 -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.scripts.SignUpTest@6cc4c815]" name="afterMethod" is-config="true" duration-ms="327" started-at="2021-12-16T16:03:35Z" finished-at="2021-12-16T16:03:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
