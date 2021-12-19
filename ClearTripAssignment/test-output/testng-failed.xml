@@ -5,8 +5,15 @@
     <classes>
       <class name="com.scripts.BookFlightTest">
         <methods>
-          <include name="selectCreateNewAccountTest"/>
+          <include name="selectRoundtripTest"/>
+          <include name="enterAlightingPointTest"/>
           <include name="beforeMainMethod"/>
+          <include name="selectNoOfAdults"/>
+          <include name="selectNoOfInfants"/>
+          <include name="enterBoardingPointTest"/>
+          <include name="selectCityDropdown_1"/>
+          <include name="selectNoOfChildren"/>
+          <include name="selectCityDropdown_2"/>
         </methods>
       </class> <!-- com.scripts.BookFlightTest -->
     </classes>

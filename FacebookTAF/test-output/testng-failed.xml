@@ -5,13 +5,13 @@
     <classes>
       <class name="com.scripts.SignUpTest">
         <methods>
-          <include name="test_04"/>
-          <include name="test_06"/>
-          <include name="test_03"/>
-          <include name="test_05"/>
-          <include name="test_02"/>
+          <include name="selectCreateNewAccountTest"/>
+          <include name="inputNameTest"/>
+          <include name="selectGenderTest"/>
+          <include name="inputEmailAddressTest"/>
           <include name="afterMethod"/>
-          <include name="test_01"/>
+          <include name="inputPasswordTest"/>
+          <include name="inputDateTest"/>
           <include name="beforeMainMethod"/>
         </methods>
       </class> <!-- com.scripts.SignUpTest -->

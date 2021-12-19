@@ -23,10 +23,10 @@ public class BaseTest {
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-		System.out.println("Title : " + driver.getTitle());
-		System.out.println("CurrentURL : " + driver.getCurrentUrl());
+		// System.out.println("Title : " + driver.getTitle());
+		// System.out.println("CurrentURL : " + driver.getCurrentUrl());
 		try {
-			Thread.sleep(10000);
+			Thread.sleep(3000);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
