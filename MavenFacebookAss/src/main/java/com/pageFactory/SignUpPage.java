@@ -27,9 +27,9 @@ public class SignUpPage {
 	By loc_inpBirthDate = By.xpath("//select[@aria-label='Day']");
 	By loc_inpBirthMonth = By.xpath("//select[@aria-label='Month']");
 	By loc_inpBirthYear = By.xpath("//select[@aria-label='Year']");
-	By loc_inpMaleGender = By.xpath("//*[contains(text(),'Male')]");
-	By loc_inpFemaleGender = By.xpath("//*[contains(text(),'Female')]");
-	By loc_inpCustomGender = By.xpath("");
+	By loc_inpMaleGender = By.xpath("//*[contains(text(),'Male')]/following::input[@type='radio']");
+	By loc_inpFemaleGender = By.xpath("//*[contains(text(),'Female')]/following::input[@type='radio']");
+	By loc_inpCustomGender = By.xpath("//*[contains(text(),'Custom')]/following::input[@type='radio']");
 
 	public void selectCreateNewAccount() {
 		
@@ -134,12 +134,14 @@ public class SignUpPage {
 
 	public void selectGender(String strGetGender) {
 
-		String strAllGender[] = { "Custom", "Female", "Male" };
+		//String strAllGender[] = { "Custom", "Female", "Male" };
 
 		if (strGetGender.equalsIgnoreCase("Male"))
 			Assert.assertTrue(objBaseTest.getObjSeleniumWrapperFunctions().click(loc_inpMaleGender));
 		else if (strGetGender.equalsIgnoreCase("Female"))
 			Assert.assertTrue(objBaseTest.getObjSeleniumWrapperFunctions().click(loc_inpFemaleGender));
+		else if (strGetGender.equalsIgnoreCase("Custom"))
+			Assert.assertTrue(objBaseTest.getObjSeleniumWrapperFunctions().click(loc_inpCustomGender));
 
 	}
 

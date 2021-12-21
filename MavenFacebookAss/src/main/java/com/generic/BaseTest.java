@@ -6,7 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class BaseTest {
 
 	private WebDriver driver = null;
-	private String strURL = "https://www.facebook.com/";
+	private String strURL = "https://the-internet.herokuapp.com/";
 
 	private SeleniumWrapperFunctions ObjSeleniumWrapperFunctions;
 
@@ -43,7 +43,6 @@ public class BaseTest {
 	}
 
 	public void tearDown() {
-
 		driver.close();
 		System.out.println("Close Browser");
 	}

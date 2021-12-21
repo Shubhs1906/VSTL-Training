@@ -126,7 +126,7 @@ public class Utilities {
 
 	public String getGender(String strGetGender) {
 
-		String[] strValues = { "Male", "Female" };
+		String[] strValues = { "Men","Male", "Female" };
 		Random genderValue = new Random();
 		int randomGender = genderValue.nextInt(strValues.length);
 

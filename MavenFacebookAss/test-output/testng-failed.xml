@@ -7,7 +7,6 @@
         <methods>
           <include name="selectCreateNewAccountTest"/>
           <include name="inputNameTest"/>
-          <include name="selectGenderTest"/>
           <include name="inputEmailAddressTest"/>
           <include name="afterMethod"/>
           <include name="inputPasswordTest"/>

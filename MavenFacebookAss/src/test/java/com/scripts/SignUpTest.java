@@ -76,13 +76,11 @@ public class SignUpTest extends BaseTest {
 		objSignUpPage.enterBirthDate(intBirthDate);
 		objSignUpPage.enterBirthMonth(strBirthMonth);
 		objSignUpPage.enterBirthYear(strBirthYear);
-
 	}
 
 	@Test(priority=6)
 	public void selectGenderTest () {
 		objSignUpPage.selectGender(strGender);
-
 	}
 
 	
