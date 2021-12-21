@@ -34,6 +34,7 @@ public class SignUpPage {
 	public void selectCreateNewAccount() {
 		
 		Assert.assertTrue(objBaseTest.getObjSeleniumWrapperFunctions().click(loc_clickCreateNewAcc));
+		
 
 	}
 
@@ -87,8 +88,10 @@ public class SignUpPage {
 	}
 
 	public void enterBirthDate(int intBirthDate) {
-
-		Assert.assertTrue(objBaseTest.getObjSeleniumWrapperFunctions().selectByIndex(loc_inpBirthDate, intBirthDate));
+		
+		String strBirthDate=Integer.toString(intBirthDate);
+				
+		Assert.assertTrue(objBaseTest.getObjSeleniumWrapperFunctions().selectDropDownOption(loc_inpBirthDate, strBirthDate, "Value"));
 
 		/*
 		 * if (intBirthDate > 0 && intBirthDate < 31)
@@ -101,7 +104,7 @@ public class SignUpPage {
 	public void enterBirthMonth(String strGetBirthMonth) {
 
 		Assert.assertTrue(
-				objBaseTest.getObjSeleniumWrapperFunctions().selectByVisibleText(loc_inpBirthMonth, strGetBirthMonth));
+				objBaseTest.getObjSeleniumWrapperFunctions().selectDropDownOption(loc_inpBirthMonth, strGetBirthMonth,"Text"));
 
 		/*
 		 * String strMonths[] = { "Jan", "Feb", "Mar", "Apr", "May", "Jun",
@@ -119,7 +122,7 @@ public class SignUpPage {
 	public void enterBirthYear(String strGetBirthYear) {
 
 		Assert.assertTrue(
-				objBaseTest.getObjSeleniumWrapperFunctions().selectByValue(loc_inpBirthYear, strGetBirthYear));
+				objBaseTest.getObjSeleniumWrapperFunctions().selectDropDownOption(loc_inpBirthYear, strGetBirthYear,"Value"));
 
 		/*
 		 * if (intBirthYear > 1905 && intBirthYear <= 2021)

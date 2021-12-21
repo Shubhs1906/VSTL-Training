@@ -43,7 +43,7 @@ public class SeleniumWrapperFunctions {
 
 	}
 
-	public boolean selectByIndex(By locator, int intInputDropDown) {
+	/*public boolean selectByIndex(By locator, int intInputDropDown) {
 
 		try {
 			WebElement element = objBaseTest.getDriver().findElement(locator);
@@ -92,6 +92,26 @@ public class SeleniumWrapperFunctions {
 			WebElement dropDown = objBaseTest.getDriver().findElement(locator);
 			Select selectDropDown = new Select(dropDown);
 			selectDropDown.selectByVisibleText(strDate);
+			return true;
+		} catch (Exception exception) {
+			System.out.println("I got exception : " + exception.getMessage());
+			exception.printStackTrace();
+			return false;
+		}
+	}*/
+
+	public boolean selectDropDownOption(By locator, String strDropDownOption, String strOptionType) {
+
+		try {
+			if (strOptionType.equals("Value")) {
+				WebElement element = objBaseTest.getDriver().findElement(locator);
+				Select dropDown = new Select(element);
+				dropDown.selectByValue(strDropDownOption);
+			} else if (strOptionType.equals("Text")) {
+				WebElement element = objBaseTest.getDriver().findElement(locator);
+				Select dropDown = new Select(element);
+				dropDown.selectByVisibleText(strDropDownOption);
+			}
 			return true;
 		} catch (Exception exception) {
 			System.out.println("I got exception : " + exception.getMessage());

@@ -2,40 +2,40 @@
 <testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="30096" started-at="2021-12-20T12:54:59Z" finished-at="2021-12-20T12:55:29Z">
+  <suite name="Default suite" duration-ms="64866" started-at="2021-12-21T07:45:49Z" finished-at="2021-12-21T07:46:54Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="30096" started-at="2021-12-20T12:54:59Z" finished-at="2021-12-20T12:55:29Z">
+    <test name="Default test" duration-ms="64866" started-at="2021-12-21T07:45:49Z" finished-at="2021-12-21T07:46:54Z">
       <class name="com.scripts.SignUpTest">
-        <test-method status="PASS" signature="beforeMainMethod()[pri:0, instance:com.scripts.SignUpTest@224edc67]" name="beforeMainMethod" is-config="true" duration-ms="19179" started-at="2021-12-20T12:54:59Z" finished-at="2021-12-20T12:55:18Z">
+        <test-method status="PASS" signature="beforeMainMethod()[pri:0, instance:com.scripts.SignUpTest@224edc67]" name="beforeMainMethod" is-config="true" duration-ms="49546" started-at="2021-12-21T07:45:49Z" finished-at="2021-12-21T07:46:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMainMethod -->
-        <test-method status="PASS" signature="selectCreateNewAccountTest()[pri:1, instance:com.scripts.SignUpTest@224edc67]" name="selectCreateNewAccountTest" duration-ms="265" started-at="2021-12-20T12:55:18Z" finished-at="2021-12-20T12:55:18Z">
+        <test-method status="PASS" signature="selectCreateNewAccountTest()[pri:1, instance:com.scripts.SignUpTest@224edc67]" name="selectCreateNewAccountTest" duration-ms="1042" started-at="2021-12-21T07:46:39Z" finished-at="2021-12-21T07:46:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectCreateNewAccountTest -->
-        <test-method status="PASS" signature="inputNameTest()[pri:2, instance:com.scripts.SignUpTest@224edc67]" name="inputNameTest" duration-ms="1629" started-at="2021-12-20T12:55:18Z" finished-at="2021-12-20T12:55:20Z">
+        <test-method status="PASS" signature="inputNameTest()[pri:2, instance:com.scripts.SignUpTest@224edc67]" name="inputNameTest" duration-ms="7255" started-at="2021-12-21T07:46:40Z" finished-at="2021-12-21T07:46:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- inputNameTest -->
-        <test-method status="PASS" signature="inputEmailAddressTest()[pri:3, instance:com.scripts.SignUpTest@224edc67]" name="inputEmailAddressTest" duration-ms="842" started-at="2021-12-20T12:55:20Z" finished-at="2021-12-20T12:55:21Z">
+        <test-method status="PASS" signature="inputEmailAddressTest()[pri:3, instance:com.scripts.SignUpTest@224edc67]" name="inputEmailAddressTest" duration-ms="991" started-at="2021-12-21T07:46:47Z" finished-at="2021-12-21T07:46:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- inputEmailAddressTest -->
-        <test-method status="PASS" signature="inputPasswordTest()[pri:4, instance:com.scripts.SignUpTest@224edc67]" name="inputPasswordTest" duration-ms="234" started-at="2021-12-20T12:55:21Z" finished-at="2021-12-20T12:55:21Z">
+        <test-method status="PASS" signature="inputPasswordTest()[pri:4, instance:com.scripts.SignUpTest@224edc67]" name="inputPasswordTest" duration-ms="322" started-at="2021-12-21T07:46:48Z" finished-at="2021-12-21T07:46:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- inputPasswordTest -->
-        <test-method status="PASS" signature="inputDateTest()[pri:5, instance:com.scripts.SignUpTest@224edc67]" name="inputDateTest" duration-ms="7609" started-at="2021-12-20T12:55:21Z" finished-at="2021-12-20T12:55:28Z">
+        <test-method status="PASS" signature="inputDateTest()[pri:5, instance:com.scripts.SignUpTest@224edc67]" name="inputDateTest" duration-ms="4615" started-at="2021-12-21T07:46:49Z" finished-at="2021-12-21T07:46:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- inputDateTest -->
-        <test-method status="PASS" signature="selectGenderTest()[pri:6, instance:com.scripts.SignUpTest@224edc67]" name="selectGenderTest" duration-ms="251" started-at="2021-12-20T12:55:28Z" finished-at="2021-12-20T12:55:29Z">
+        <test-method status="PASS" signature="selectGenderTest()[pri:6, instance:com.scripts.SignUpTest@224edc67]" name="selectGenderTest" duration-ms="840" started-at="2021-12-21T07:46:53Z" finished-at="2021-12-21T07:46:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectGenderTest -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.scripts.SignUpTest@224edc67]" name="afterMethod" is-config="true" duration-ms="0" started-at="2021-12-20T12:55:29Z" finished-at="2021-12-20T12:55:29Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.scripts.SignUpTest@224edc67]" name="afterMethod" is-config="true" duration-ms="13" started-at="2021-12-21T07:46:54Z" finished-at="2021-12-21T07:46:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
