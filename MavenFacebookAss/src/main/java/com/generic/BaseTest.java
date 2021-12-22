@@ -3,6 +3,7 @@ package com.generic;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+
 public class BaseTest {
 
 	private WebDriver driver = null;
@@ -11,7 +12,8 @@ public class BaseTest {
 	private SeleniumWrapperFunctions ObjSeleniumWrapperFunctions;
 
 	public void itializeWebEnvironment() {
-		System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir") + "/src/main/resources/drivers/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver",
+				System.getProperty("user.dir") + "/src/main/resources/drivers/chromedriver.exe");
 
 		driver = new ChromeDriver();
 		ObjSeleniumWrapperFunctions = new SeleniumWrapperFunctions(this);
@@ -22,11 +24,10 @@ public class BaseTest {
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		System.out.println("Title : " + driver.getTitle());
 		System.out.println("CurrentURL : " + driver.getCurrentUrl());
-		/*try {
-			Thread.sleep(10000);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}*/
+		/*
+		 * try { Thread.sleep(10000); } catch (InterruptedException e) {
+		 * e.printStackTrace(); }
+		 */
 
 	}
 

@@ -1,9 +1,6 @@
 package com.herokuapp.scripts;
 
-import javax.naming.spi.ObjectFactoryBuilder;
-
 import org.openqa.selenium.WebDriver;
-import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -16,9 +13,12 @@ public class ActionEventTest extends BaseTest {
 
 	static WebDriver driver = null;
 	private ActionEventPage objActionEventPage;
+	private String strRandomDropDown;
+
 
 	private Utilities objUtilities = new Utilities();
 	String strFirstName = objUtilities.getFirstName(6);
+	String strDropDown = objUtilities.getDropDown(strRandomDropDown);
 
 	@BeforeClass
 	public void beforeMainMethod() {
@@ -44,11 +44,25 @@ public class ActionEventTest extends BaseTest {
 	public void clearWrittenTextTest() {
 		objActionEventPage.clearWrittenText(strFirstName);
 	}
-	
-	
+
 	@Test
-	public void navigateOptions() {
+	public void navigateRefreshTest() {
 		objActionEventPage.navigateOptions("refresh");
+	}
+
+	@Test
+	public void navigateBackTest() {
+		objActionEventPage.navigateOptions("back");
+	}
+
+	@Test
+	public void navigateForwardTest() {
+		objActionEventPage.navigateOptions("Forward");
+	}
+
+	@Test
+	public void selectDDBoxTest() {
+		objActionEventPage.selectDDBox("Option 1", "text");
 	}
 
 }

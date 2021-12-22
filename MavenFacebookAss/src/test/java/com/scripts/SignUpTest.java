@@ -15,6 +15,7 @@ public class SignUpTest extends BaseTest {
 	private static String strGetGender;
 	private static String strGetBirthMonth;
 	private static String GetBirthYear;
+	private String strRandomDropDown;
 	static WebDriver driver = null;
 
 	private SignUpPage objSignUpPage;
@@ -29,6 +30,8 @@ public class SignUpTest extends BaseTest {
 	String strBirthYear = objUtilities.getBirthYear(GetBirthYear);
 	String strGender = objUtilities.getGender(strGetGender);
 	String strBirthMonth = objUtilities.GetBirthMonth(strGetBirthMonth);
+	String strDropDown = objUtilities.getDropDown(strRandomDropDown);
+
 
 	@BeforeClass
 	public void beforeMainMethod() {
@@ -73,9 +76,9 @@ public class SignUpTest extends BaseTest {
 
 	@Test(priority=5)
 	public void inputDateTest () {
-		objSignUpPage.enterBirthDate(intBirthDate);
-		objSignUpPage.enterBirthMonth(strBirthMonth);
-		objSignUpPage.enterBirthYear(strBirthYear);
+		objSignUpPage.enterBirthDate(intBirthDate, "Value");
+		objSignUpPage.enterBirthMonth(strBirthMonth, "text");
+		objSignUpPage.enterBirthYear(strBirthYear, "value");
 	}
 
 	@Test(priority=6)

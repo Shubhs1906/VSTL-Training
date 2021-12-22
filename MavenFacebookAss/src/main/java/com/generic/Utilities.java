@@ -126,15 +126,24 @@ public class Utilities {
 
 	public String getGender(String strGetGender) {
 
-		String[] strValues = { "Men","Male", "Female" };
+		String[] strValues = { "Men", "Male", "Female" };
 		Random genderValue = new Random();
 		int randomGender = genderValue.nextInt(strValues.length);
 
-		strGetGender = strValues[randomGender];
+		 strGetGender = strValues[randomGender];
 		return strGetGender;
 
 	}
 
-	
+	public String getDropDown(String strRandomDropDown) {
+
+		String[] strValues = { "Men", "Male", "Female" };
+		Random genderValue = new Random();
+		int randomGender = genderValue.nextInt(strValues.length);
+
+		strRandomDropDown = strValues[randomGender];
+		return strRandomDropDown;
+
+	}
 
 }

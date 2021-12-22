@@ -32,9 +32,8 @@ public class SignUpPage {
 	By loc_inpCustomGender = By.xpath("//*[contains(text(),'Custom')]/following::input[@type='radio']");
 
 	public void selectCreateNewAccount() {
-		
+
 		Assert.assertTrue(objBaseTest.getObjSeleniumWrapperFunctions().click(loc_clickCreateNewAcc));
-		
 
 	}
 
@@ -87,11 +86,12 @@ public class SignUpPage {
 
 	}
 
-	public void enterBirthDate(int intBirthDate) {
-		
-		String strBirthDate=Integer.toString(intBirthDate);
-				
-		Assert.assertTrue(objBaseTest.getObjSeleniumWrapperFunctions().selectDropDownOption(loc_inpBirthDate, strBirthDate, "Value"));
+	public void enterBirthDate(int intBirthDate, String strOptionType) {
+
+		String strBirthDate = Integer.toString(intBirthDate);
+
+		Assert.assertTrue(objBaseTest.getObjSeleniumWrapperFunctions().selectDropDownOption(loc_inpBirthDate,
+				strBirthDate, strOptionType));
 
 		/*
 		 * if (intBirthDate > 0 && intBirthDate < 31)
@@ -101,10 +101,10 @@ public class SignUpPage {
 
 	}
 
-	public void enterBirthMonth(String strGetBirthMonth) {
+	public void enterBirthMonth(String strGetBirthMonth, String strOptionType) {
 
-		Assert.assertTrue(
-				objBaseTest.getObjSeleniumWrapperFunctions().selectDropDownOption(loc_inpBirthMonth, strGetBirthMonth,"Text"));
+		Assert.assertTrue(objBaseTest.getObjSeleniumWrapperFunctions().selectDropDownOption(loc_inpBirthMonth,
+				strGetBirthMonth, strOptionType));
 
 		/*
 		 * String strMonths[] = { "Jan", "Feb", "Mar", "Apr", "May", "Jun",
@@ -119,10 +119,10 @@ public class SignUpPage {
 
 	}
 
-	public void enterBirthYear(String strGetBirthYear) {
+	public void enterBirthYear(String strGetBirthYear, String strOptionType) {
 
-		Assert.assertTrue(
-				objBaseTest.getObjSeleniumWrapperFunctions().selectDropDownOption(loc_inpBirthYear, strGetBirthYear,"Value"));
+		Assert.assertTrue(objBaseTest.getObjSeleniumWrapperFunctions().selectDropDownOption(loc_inpBirthYear,
+				strGetBirthYear, strOptionType));
 
 		/*
 		 * if (intBirthYear > 1905 && intBirthYear <= 2021)
@@ -133,8 +133,6 @@ public class SignUpPage {
 	}
 
 	public void selectGender(String strGetGender) {
-
-		//String strAllGender[] = { "Custom", "Female", "Male" };
 
 		if (strGetGender.equalsIgnoreCase("Male"))
 			Assert.assertTrue(objBaseTest.getObjSeleniumWrapperFunctions().click(loc_inpMaleGender));

@@ -3,17 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.scripts.SignUpTest">
+      <class name="com.herokuapp.scripts.ActionEventTest">
         <methods>
-          <include name="selectCreateNewAccountTest"/>
-          <include name="inputNameTest"/>
-          <include name="inputEmailAddressTest"/>
-          <include name="afterMethod"/>
-          <include name="inputPasswordTest"/>
-          <include name="inputDateTest"/>
+          <include name="clearWrittenTextTest"/>
+          <include name="selectDDBoxTest"/>
           <include name="beforeMainMethod"/>
+          <include name="dragAndDropObjectTest"/>
+          <include name="afterMethod"/>
         </methods>
-      </class> <!-- com.scripts.SignUpTest -->
+      </class> <!-- com.herokuapp.scripts.ActionEventTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

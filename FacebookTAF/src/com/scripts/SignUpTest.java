@@ -29,6 +29,8 @@ public class SignUpTest extends BaseTest {
 	String strBirthYear = objUtilities.getBirthYear(GetBirthYear);
 	String strGender = objUtilities.getGender(strGetGender);
 	String strBirthMonth = objUtilities.GetBirthMonth(strGetBirthMonth);
+	
+	
 
 	@BeforeClass
 	public void beforeMainMethod() {
