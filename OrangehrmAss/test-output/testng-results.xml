@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="22688" started-at="2021-12-22T12:44:56Z" finished-at="2021-12-22T12:45:19Z">
+  <suite name="Default suite" duration-ms="20746" started-at="2021-12-23T05:47:07Z" finished-at="2021-12-23T05:47:28Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="22688" started-at="2021-12-22T12:44:56Z" finished-at="2021-12-22T12:45:19Z">
+    <test name="Default test" duration-ms="20746" started-at="2021-12-23T05:47:07Z" finished-at="2021-12-23T05:47:28Z">
       <class name="com.scripts.OrangeHrmTest">
-        <test-method status="PASS" signature="beforeMainMethod()[pri:0, instance:com.scripts.OrangeHrmTest@5d5eef3d]" name="beforeMainMethod" is-config="true" duration-ms="20663" started-at="2021-12-22T12:44:56Z" finished-at="2021-12-22T12:45:17Z">
+        <test-method status="PASS" signature="beforeMainMethod()[pri:0, instance:com.scripts.OrangeHrmTest@5d5eef3d]" name="beforeMainMethod" is-config="true" duration-ms="18585" started-at="2021-12-23T05:47:07Z" finished-at="2021-12-23T05:47:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMainMethod -->
-        <test-method status="PASS" signature="enterIdPassword()[pri:1, instance:com.scripts.OrangeHrmTest@5d5eef3d]" name="enterIdPassword" duration-ms="552" started-at="2021-12-22T12:45:17Z" finished-at="2021-12-22T12:45:18Z">
+        <test-method status="PASS" signature="enterIdPassword()[pri:1, instance:com.scripts.OrangeHrmTest@5d5eef3d]" name="enterIdPassword" duration-ms="657" started-at="2021-12-23T05:47:26Z" finished-at="2021-12-23T05:47:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- enterIdPassword -->
-        <test-method status="PASS" signature="selectLoginTest()[pri:2, instance:com.scripts.OrangeHrmTest@5d5eef3d]" name="selectLoginTest" duration-ms="1407" started-at="2021-12-22T12:45:18Z" finished-at="2021-12-22T12:45:19Z">
+        <test-method status="PASS" signature="selectLoginTest()[pri:2, instance:com.scripts.OrangeHrmTest@5d5eef3d]" name="selectLoginTest" duration-ms="1428" started-at="2021-12-23T05:47:26Z" finished-at="2021-12-23T05:47:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectLoginTest -->

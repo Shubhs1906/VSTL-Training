@@ -1,6 +1,7 @@
 package Collections;
 
 import java.util.HashSet;
+import java.util.Iterator;
 
 public class SetExamples {
 
@@ -31,5 +32,15 @@ public class SetExamples {
 	    System.out.println("Duplicate elements not allowed");
         System.out.println(Hyundai);
 	    System.out.println("****************************************");
+	    
+	    
+	    Iterator<String> iterateset =  Hyundai.iterator();
+	    while (iterateset.hasNext()){
+	    	String strSet = (String) iterateset.next();
+	    	System.out.println(strSet);
+	    }
+	    
+	    
+	    
 	}
 }

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class ListExamples {
 
-	public void carDetailsList() {
+	public ArrayList<String> carDetailsList() {
 
 		// Created ArrayList
 
@@ -75,8 +75,10 @@ public class ListExamples {
 		    System.out.println("");
 		    System.out.println("");
 		    System.out.println("");
+			return Hyundai;
 		    
-		    //
+			
+			
 	}
 
 }
