@@ -2,14 +2,13 @@ package com.pageFactory;
 
 import org.openqa.selenium.By;
 import org.testng.Assert;
+import org.testng.Reporter;
 
 import com.generic.BaseTest;
-import com.generic.SeleniumWrapperFunctions;
 
 public class SignInSignOutPage {
 
 	private BaseTest objBaseTest;
-	private SeleniumWrapperFunctions objSeleniumWrapperFunctions;
 
 	public SignInSignOutPage(BaseTest baseTest) {
 		this.objBaseTest = baseTest;
@@ -26,12 +25,14 @@ public class SignInSignOutPage {
 	public void verifySignInPageIsDisplayed() {
 		objBaseTest.getObjSeleniumWrapperFunctions().setImplicitWait(5);
 		Assert.assertTrue(objBaseTest.getObjSeleniumWrapperFunctions().verifyDisplayedObject(loc_SignIn));
+		Reporter.log("Verify Sign In Page Is Displayed.", true);
 
 	}
 
 	public void clickSignInButtonOnHomePage() {
 
 		Assert.assertTrue(objBaseTest.getObjSeleniumWrapperFunctions().clickOption(loc_SignIn));
+		Reporter.log("Click on Signin Button.", true);
 
 	}
 
@@ -40,16 +41,19 @@ public class SignInSignOutPage {
 	public void enterUsername(String strUsername) {
 
 		Assert.assertTrue(objBaseTest.getObjSeleniumWrapperFunctions().setText(loc_inpUsername, strUsername));
+		Reporter.log("Set Username.", true);
 	}
 
 	public void enterPassword(String strPassword) {
 
 		Assert.assertTrue(objBaseTest.getObjSeleniumWrapperFunctions().setText(loc_inpPassword, strPassword));
+		Reporter.log("Set Password.", true);
 	}
 
 	public void clickSignInButtonOnAuthenticationPage() {
 
 		Assert.assertTrue(objBaseTest.getObjSeleniumWrapperFunctions().clickOption(loc_btnSignIn));
+		Reporter.log("Click on Signin Button.", true);
 
 	}
 	

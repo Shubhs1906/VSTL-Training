@@ -3,13 +3,11 @@ package com.flows;
 import java.util.Hashtable;
 
 import com.generic.BaseTest;
-import com.generic.SeleniumWrapperFunctions;
 import com.pageFactory.SignInSignOutPage;
 
 public class SignInSignOutFlow {
 
 	private BaseTest objBaseTest;
-	private SeleniumWrapperFunctions objSeleniumWrapperFunctions;
 	private SignInSignOutPage objSignInSignOutPage;
 	public Hashtable<String, String> objHashtable;
 	private String strGetIdPass;

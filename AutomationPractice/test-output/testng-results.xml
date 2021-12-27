@@ -1,29 +1,864 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="1" ignored="0" total="4" passed="3">
   <reporter-output>
+    <line>
+      <![CDATA[Verify Sign In Page Is Displayed.]]>
+    </line>
+    <line>
+      <![CDATA[Click on Signin Button.]]>
+    </line>
+    <line>
+      <![CDATA[Set Username.]]>
+    </line>
+    <line>
+      <![CDATA[Set Password.]]>
+    </line>
+    <line>
+      <![CDATA[Click on Signin Button.]]>
+    </line>
+    <line>
+      <![CDATA[Verify User Signed In And Home Page Is Displayed.]]>
+    </line>
+    <line>
+      <![CDATA[Mouse over to Women.]]>
+    </line>
+    <line>
+      <![CDATA[Click on Summer Dresses Button.]]>
+    </line>
+    <line>
+      <![CDATA[Verify Summer Dresses page is displayed.]]>
+    </line>
+    <line>
+      <![CDATA[Mouse over to Printed Chiffon Dress.]]>
+    </line>
+    <line>
+      <![CDATA[All links : ]]>
+    </line>
+    <line>
+      <![CDATA[All links : SHUBHAM MAGDUM]]>
+    </line>
+    <line>
+      <![CDATA[All links : Sign out]]>
+    </line>
+    <line>
+      <![CDATA[All links : Contact us]]>
+    </line>
+    <line>
+      <![CDATA[All links : ]]>
+    </line>
+    <line>
+      <![CDATA[All links : Cart (empty)]]>
+    </line>
+    <line>
+      <![CDATA[All links : ]]>
+    </line>
+    <line>
+      <![CDATA[All links : ]]>
+    </line>
+    <line>
+      <![CDATA[All links : WOMEN]]>
+    </line>
+    <line>
+      <![CDATA[All links : ]]>
+    </line>
+    <line>
+      <![CDATA[All links : ]]>
+    </line>
+    <line>
+      <![CDATA[All links : ]]>
+    </line>
+    <line>
+      <![CDATA[All links : ]]>
+    </line>
+    <line>
+      <![CDATA[All links : ]]>
+    </line>
+    <line>
+      <![CDATA[All links : ]]>
+    </line>
+    <line>
+      <![CDATA[All links : ]]>
+    </line>
+    <line>
+      <![CDATA[All links : DRESSES]]>
+    </line>
+    <line>
+      <![CDATA[All links : ]]>
+    </line>
+    <line>
+      <![CDATA[All links : ]]>
+    </line>
+    <line>
+      <![CDATA[All links : ]]>
+    </line>
+    <line>
+      <![CDATA[All links : T-SHIRTS]]>
+    </line>
+    <line>
+      <![CDATA[All links : ]]>
+    </line>
+    <line>
+      <![CDATA[All links : Women]]>
+    </line>
+    <line>
+      <![CDATA[All links : Dresses]]>
+    </line>
+    <line>
+      <![CDATA[All links : S (3)]]>
+    </line>
+    <line>
+      <![CDATA[All links : M (3)]]>
+    </line>
+    <line>
+      <![CDATA[All links : L (3)]]>
+    </line>
+    <line>
+      <![CDATA[All links : White (1)]]>
+    </line>
+    <line>
+      <![CDATA[All links : Black (1)]]>
+    </line>
+    <line>
+      <![CDATA[All links : Orange (1)]]>
+    </line>
+    <line>
+      <![CDATA[All links : Blue (1)]]>
+    </line>
+    <line>
+      <![CDATA[All links : Green (1)]]>
+    </line>
+    <line>
+      <![CDATA[All links : Yellow (3)]]>
+    </line>
+    <line>
+      <![CDATA[All links : Polyester (2)]]>
+    </line>
+    <line>
+      <![CDATA[All links : Viscose (1)]]>
+    </line>
+    <line>
+      <![CDATA[All links : Casual (1)]]>
+    </line>
+    <line>
+      <![CDATA[All links : Girly (2)]]>
+    </line>
+    <line>
+      <![CDATA[All links : Maxi Dress (1)]]>
+    </line>
+    <line>
+      <![CDATA[All links : Midi Dress (1)]]>
+    </line>
+    <line>
+      <![CDATA[All links : Short Dress (1)]]>
+    </line>
+    <line>
+      <![CDATA[All links : In stock (3)]]>
+    </line>
+    <line>
+      <![CDATA[All links : Fashion Manufacturer (3)]]>
+    </line>
+    <line>
+      <![CDATA[All links : New (3)]]>
+    </line>
+    <line>
+      <![CDATA[All links : ]]>
+    </line>
+    <line>
+      <![CDATA[All links : ]]>
+    </line>
+    <line>
+      <![CDATA[All links : INFORMATION]]>
+    </line>
+    <line>
+      <![CDATA[All links : Delivery]]>
+    </line>
+    <line>
+      <![CDATA[All links : Legal Notice]]>
+    </line>
+    <line>
+      <![CDATA[All links : Terms and conditions of use]]>
+    </line>
+    <line>
+      <![CDATA[All links : About us]]>
+    </line>
+    <line>
+      <![CDATA[All links : Secure payment]]>
+    </line>
+    <line>
+      <![CDATA[All links : Our stores]]>
+    </line>
+    <line>
+      <![CDATA[All links : SPECIALS]]>
+    </line>
+    <line>
+      <![CDATA[All links : ]]>
+    </line>
+    <line>
+      <![CDATA[All links : Printed Chiffon Dress]]>
+    </line>
+    <line>
+      <![CDATA[All links : All specials]]>
+    </line>
+    <line>
+      <![CDATA[All links : OUR STORES]]>
+    </line>
+    <line>
+      <![CDATA[All links : ]]>
+    </line>
+    <line>
+      <![CDATA[All links : Discover our stores]]>
+    </line>
+    <line>
+      <![CDATA[All links : Grid]]>
+    </line>
+    <line>
+      <![CDATA[All links : List]]>
+    </line>
+    <line>
+      <![CDATA[All links : ]]>
+    </line>
+    <line>
+      <![CDATA[All links : ]]>
+    </line>
+    <line>
+      <![CDATA[All links : ]]>
+    </line>
+    <line>
+      <![CDATA[All links : Printed Summer Dress]]>
+    </line>
+    <line>
+      <![CDATA[All links : ]]>
+    </line>
+    <line>
+      <![CDATA[All links : ]]>
+    </line>
+    <line>
+      <![CDATA[All links : ]]>
+    </line>
+    <line>
+      <![CDATA[All links : ]]>
+    </line>
+    <line>
+      <![CDATA[All links : ]]>
+    </line>
+    <line>
+      <![CDATA[All links : ]]>
+    </line>
+    <line>
+      <![CDATA[All links : ]]>
+    </line>
+    <line>
+      <![CDATA[All links : ]]>
+    </line>
+    <line>
+      <![CDATA[All links : ]]>
+    </line>
+    <line>
+      <![CDATA[All links : ]]>
+    </line>
+    <line>
+      <![CDATA[All links : ]]>
+    </line>
+    <line>
+      <![CDATA[All links : Printed Summer Dress]]>
+    </line>
+    <line>
+      <![CDATA[All links : Add to cart]]>
+    </line>
+    <line>
+      <![CDATA[All links : More]]>
+    </line>
+    <line>
+      <![CDATA[All links : ]]>
+    </line>
+    <line>
+      <![CDATA[All links : ]]>
+    </line>
+    <line>
+      <![CDATA[All links : Add to Wishlist]]>
+    </line>
+    <line>
+      <![CDATA[All links : ]]>
+    </line>
+    <line>
+      <![CDATA[All links : ]]>
+    </line>
+    <line>
+      <![CDATA[All links : ]]>
+    </line>
+    <line>
+      <![CDATA[All links : Quick view]]>
+    </line>
+    <line>
+      <![CDATA[All links : Printed Chiffon Dress]]>
+    </line>
+    <line>
+      <![CDATA[All links : Add to cart]]>
+    </line>
+    <line>
+      <![CDATA[All links : More]]>
+    </line>
+    <line>
+      <![CDATA[All links : ]]>
+    </line>
+    <line>
+      <![CDATA[All links : ]]>
+    </line>
+    <line>
+      <![CDATA[All links : Add to Wishlist]]>
+    </line>
+    <line>
+      <![CDATA[All links : Add to Compare]]>
+    </line>
+    <line>
+      <![CDATA[All links : ]]>
+    </line>
+    <line>
+      <![CDATA[All links : ]]>
+    </line>
+    <line>
+      <![CDATA[All links : ]]>
+    </line>
+    <line>
+      <![CDATA[All links : ]]>
+    </line>
+    <line>
+      <![CDATA[All links : Women]]>
+    </line>
+    <line>
+      <![CDATA[All links : ]]>
+    </line>
+    <line>
+      <![CDATA[All links : ]]>
+    </line>
+    <line>
+      <![CDATA[All links : ]]>
+    </line>
+    <line>
+      <![CDATA[All links : ]]>
+    </line>
+    <line>
+      <![CDATA[All links : ]]>
+    </line>
+    <line>
+      <![CDATA[All links : ]]>
+    </line>
+    <line>
+      <![CDATA[All links : ]]>
+    </line>
+    <line>
+      <![CDATA[All links : Specials]]>
+    </line>
+    <line>
+      <![CDATA[All links : New products]]>
+    </line>
+    <line>
+      <![CDATA[All links : Best sellers]]>
+    </line>
+    <line>
+      <![CDATA[All links : Our stores]]>
+    </line>
+    <line>
+      <![CDATA[All links : Contact us]]>
+    </line>
+    <line>
+      <![CDATA[All links : Terms and conditions of use]]>
+    </line>
+    <line>
+      <![CDATA[All links : About us]]>
+    </line>
+    <line>
+      <![CDATA[All links : Sitemap]]>
+    </line>
+    <line>
+      <![CDATA[All links : Ecommerce software by PrestaShop™]]>
+    </line>
+    <line>
+      <![CDATA[All links : My account]]>
+    </line>
+    <line>
+      <![CDATA[All links : My orders]]>
+    </line>
+    <line>
+      <![CDATA[All links : My credit slips]]>
+    </line>
+    <line>
+      <![CDATA[All links : My addresses]]>
+    </line>
+    <line>
+      <![CDATA[All links : My personal info]]>
+    </line>
+    <line>
+      <![CDATA[All links : Sign out]]>
+    </line>
+    <line>
+      <![CDATA[All links : support@seleniumframework.com]]>
+    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="49902" started-at="2021-12-24T14:08:01Z" finished-at="2021-12-24T14:08:50Z">
+  <suite name="AutomationPracticeSuite" duration-ms="45997" started-at="2021-12-26T21:41:33Z" finished-at="2021-12-26T21:42:19Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="49902" started-at="2021-12-24T14:08:01Z" finished-at="2021-12-24T14:08:50Z">
+    <test name="Automation Practice Test" duration-ms="45997" started-at="2021-12-26T21:41:33Z" finished-at="2021-12-26T21:42:19Z">
       <class name="com.scripts.AutomationPracticeTest">
-        <test-method status="PASS" signature="beforeMainMethod()[pri:0, instance:com.scripts.AutomationPracticeTest@3ffc5af1]" name="beforeMainMethod" is-config="true" duration-ms="36603" started-at="2021-12-24T14:08:01Z" finished-at="2021-12-24T14:08:37Z">
+        <test-method status="PASS" signature="beforeMainMethod()[pri:0, instance:com.scripts.AutomationPracticeTest@43814d18]" name="beforeMainMethod" is-config="true" duration-ms="14373" started-at="2021-12-26T21:41:33Z" finished-at="2021-12-26T21:41:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMainMethod -->
-        <test-method status="PASS" signature="TCID_101()[pri:1, instance:com.scripts.AutomationPracticeTest@3ffc5af1]" name="TCID_101" duration-ms="7281" started-at="2021-12-24T14:08:37Z" finished-at="2021-12-24T14:08:44Z">
+        <test-method status="PASS" signature="TCID_101_VerifySignInFunctionality()[pri:1, instance:com.scripts.AutomationPracticeTest@43814d18]" name="TCID_101_VerifySignInFunctionality" duration-ms="5939" started-at="2021-12-26T21:41:47Z" finished-at="2021-12-26T21:41:53Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Verify Sign In Page Is Displayed.]]>
+            </line>
+            <line>
+              <![CDATA[Click on Signin Button.]]>
+            </line>
+            <line>
+              <![CDATA[Set Username.]]>
+            </line>
+            <line>
+              <![CDATA[Set Password.]]>
+            </line>
+            <line>
+              <![CDATA[Click on Signin Button.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TCID_101_VerifySignInFunctionality -->
+        <test-method status="FAIL" signature="TCID_102_VerifyProductIsAddedToCart()[pri:2, instance:com.scripts.AutomationPracticeTest@43814d18]" name="TCID_102_VerifyProductIsAddedToCart" duration-ms="19738" started-at="2021-12-26T21:41:53Z" finished-at="2021-12-26T21:42:13Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at org.testng.Assert.assertTrue(Assert.java:54)
+at com.pageFactory.SummerDressesPage.clickOnAddToCartPrintedChiffonDressOnSummerDressesPage(SummerDressesPage.java:51)
+at com.flows.AddToCartFlow.addProductToCart(AddToCartFlow.java:25)
+at com.scripts.AutomationPracticeTest.TCID_102_VerifyProductIsAddedToCart(AutomationPracticeTest.java:60)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[Verify User Signed In And Home Page Is Displayed.]]>
+            </line>
+            <line>
+              <![CDATA[Mouse over to Women.]]>
+            </line>
+            <line>
+              <![CDATA[Click on Summer Dresses Button.]]>
+            </line>
+            <line>
+              <![CDATA[Verify Summer Dresses page is displayed.]]>
+            </line>
+            <line>
+              <![CDATA[Mouse over to Printed Chiffon Dress.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TCID_102_VerifyProductIsAddedToCart -->
+        <test-method status="PASS" signature="TCID_103_GetAllLinksOnSummerDressesPage()[pri:3, instance:com.scripts.AutomationPracticeTest@43814d18]" name="TCID_103_GetAllLinksOnSummerDressesPage" duration-ms="9" started-at="2021-12-26T21:42:13Z" finished-at="2021-12-26T21:42:13Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TCID_101 -->
-        <test-method status="PASS" signature="TCID_102()[pri:2, instance:com.scripts.AutomationPracticeTest@3ffc5af1]" name="TCID_102" duration-ms="5951" started-at="2021-12-24T14:08:45Z" finished-at="2021-12-24T14:08:50Z">
+        </test-method> <!-- TCID_103_GetAllLinksOnSummerDressesPage -->
+        <test-method status="PASS" signature="TCID_104_VerifyAllLinksOnPage()[pri:4, instance:com.scripts.AutomationPracticeTest@43814d18]" name="TCID_104_VerifyAllLinksOnPage" duration-ms="5626" started-at="2021-12-26T21:42:13Z" finished-at="2021-12-26T21:42:19Z">
           <reporter-output>
+            <line>
+              <![CDATA[All links : ]]>
+            </line>
+            <line>
+              <![CDATA[All links : SHUBHAM MAGDUM]]>
+            </line>
+            <line>
+              <![CDATA[All links : Sign out]]>
+            </line>
+            <line>
+              <![CDATA[All links : Contact us]]>
+            </line>
+            <line>
+              <![CDATA[All links : ]]>
+            </line>
+            <line>
+              <![CDATA[All links : Cart (empty)]]>
+            </line>
+            <line>
+              <![CDATA[All links : ]]>
+            </line>
+            <line>
+              <![CDATA[All links : ]]>
+            </line>
+            <line>
+              <![CDATA[All links : WOMEN]]>
+            </line>
+            <line>
+              <![CDATA[All links : ]]>
+            </line>
+            <line>
+              <![CDATA[All links : ]]>
+            </line>
+            <line>
+              <![CDATA[All links : ]]>
+            </line>
+            <line>
+              <![CDATA[All links : ]]>
+            </line>
+            <line>
+              <![CDATA[All links : ]]>
+            </line>
+            <line>
+              <![CDATA[All links : ]]>
+            </line>
+            <line>
+              <![CDATA[All links : ]]>
+            </line>
+            <line>
+              <![CDATA[All links : DRESSES]]>
+            </line>
+            <line>
+              <![CDATA[All links : ]]>
+            </line>
+            <line>
+              <![CDATA[All links : ]]>
+            </line>
+            <line>
+              <![CDATA[All links : ]]>
+            </line>
+            <line>
+              <![CDATA[All links : T-SHIRTS]]>
+            </line>
+            <line>
+              <![CDATA[All links : ]]>
+            </line>
+            <line>
+              <![CDATA[All links : Women]]>
+            </line>
+            <line>
+              <![CDATA[All links : Dresses]]>
+            </line>
+            <line>
+              <![CDATA[All links : S (3)]]>
+            </line>
+            <line>
+              <![CDATA[All links : M (3)]]>
+            </line>
+            <line>
+              <![CDATA[All links : L (3)]]>
+            </line>
+            <line>
+              <![CDATA[All links : White (1)]]>
+            </line>
+            <line>
+              <![CDATA[All links : Black (1)]]>
+            </line>
+            <line>
+              <![CDATA[All links : Orange (1)]]>
+            </line>
+            <line>
+              <![CDATA[All links : Blue (1)]]>
+            </line>
+            <line>
+              <![CDATA[All links : Green (1)]]>
+            </line>
+            <line>
+              <![CDATA[All links : Yellow (3)]]>
+            </line>
+            <line>
+              <![CDATA[All links : Polyester (2)]]>
+            </line>
+            <line>
+              <![CDATA[All links : Viscose (1)]]>
+            </line>
+            <line>
+              <![CDATA[All links : Casual (1)]]>
+            </line>
+            <line>
+              <![CDATA[All links : Girly (2)]]>
+            </line>
+            <line>
+              <![CDATA[All links : Maxi Dress (1)]]>
+            </line>
+            <line>
+              <![CDATA[All links : Midi Dress (1)]]>
+            </line>
+            <line>
+              <![CDATA[All links : Short Dress (1)]]>
+            </line>
+            <line>
+              <![CDATA[All links : In stock (3)]]>
+            </line>
+            <line>
+              <![CDATA[All links : Fashion Manufacturer (3)]]>
+            </line>
+            <line>
+              <![CDATA[All links : New (3)]]>
+            </line>
+            <line>
+              <![CDATA[All links : ]]>
+            </line>
+            <line>
+              <![CDATA[All links : ]]>
+            </line>
+            <line>
+              <![CDATA[All links : INFORMATION]]>
+            </line>
+            <line>
+              <![CDATA[All links : Delivery]]>
+            </line>
+            <line>
+              <![CDATA[All links : Legal Notice]]>
+            </line>
+            <line>
+              <![CDATA[All links : Terms and conditions of use]]>
+            </line>
+            <line>
+              <![CDATA[All links : About us]]>
+            </line>
+            <line>
+              <![CDATA[All links : Secure payment]]>
+            </line>
+            <line>
+              <![CDATA[All links : Our stores]]>
+            </line>
+            <line>
+              <![CDATA[All links : SPECIALS]]>
+            </line>
+            <line>
+              <![CDATA[All links : ]]>
+            </line>
+            <line>
+              <![CDATA[All links : Printed Chiffon Dress]]>
+            </line>
+            <line>
+              <![CDATA[All links : All specials]]>
+            </line>
+            <line>
+              <![CDATA[All links : OUR STORES]]>
+            </line>
+            <line>
+              <![CDATA[All links : ]]>
+            </line>
+            <line>
+              <![CDATA[All links : Discover our stores]]>
+            </line>
+            <line>
+              <![CDATA[All links : Grid]]>
+            </line>
+            <line>
+              <![CDATA[All links : List]]>
+            </line>
+            <line>
+              <![CDATA[All links : ]]>
+            </line>
+            <line>
+              <![CDATA[All links : ]]>
+            </line>
+            <line>
+              <![CDATA[All links : ]]>
+            </line>
+            <line>
+              <![CDATA[All links : Printed Summer Dress]]>
+            </line>
+            <line>
+              <![CDATA[All links : ]]>
+            </line>
+            <line>
+              <![CDATA[All links : ]]>
+            </line>
+            <line>
+              <![CDATA[All links : ]]>
+            </line>
+            <line>
+              <![CDATA[All links : ]]>
+            </line>
+            <line>
+              <![CDATA[All links : ]]>
+            </line>
+            <line>
+              <![CDATA[All links : ]]>
+            </line>
+            <line>
+              <![CDATA[All links : ]]>
+            </line>
+            <line>
+              <![CDATA[All links : ]]>
+            </line>
+            <line>
+              <![CDATA[All links : ]]>
+            </line>
+            <line>
+              <![CDATA[All links : ]]>
+            </line>
+            <line>
+              <![CDATA[All links : ]]>
+            </line>
+            <line>
+              <![CDATA[All links : Printed Summer Dress]]>
+            </line>
+            <line>
+              <![CDATA[All links : Add to cart]]>
+            </line>
+            <line>
+              <![CDATA[All links : More]]>
+            </line>
+            <line>
+              <![CDATA[All links : ]]>
+            </line>
+            <line>
+              <![CDATA[All links : ]]>
+            </line>
+            <line>
+              <![CDATA[All links : Add to Wishlist]]>
+            </line>
+            <line>
+              <![CDATA[All links : ]]>
+            </line>
+            <line>
+              <![CDATA[All links : ]]>
+            </line>
+            <line>
+              <![CDATA[All links : ]]>
+            </line>
+            <line>
+              <![CDATA[All links : Quick view]]>
+            </line>
+            <line>
+              <![CDATA[All links : Printed Chiffon Dress]]>
+            </line>
+            <line>
+              <![CDATA[All links : Add to cart]]>
+            </line>
+            <line>
+              <![CDATA[All links : More]]>
+            </line>
+            <line>
+              <![CDATA[All links : ]]>
+            </line>
+            <line>
+              <![CDATA[All links : ]]>
+            </line>
+            <line>
+              <![CDATA[All links : Add to Wishlist]]>
+            </line>
+            <line>
+              <![CDATA[All links : Add to Compare]]>
+            </line>
+            <line>
+              <![CDATA[All links : ]]>
+            </line>
+            <line>
+              <![CDATA[All links : ]]>
+            </line>
+            <line>
+              <![CDATA[All links : ]]>
+            </line>
+            <line>
+              <![CDATA[All links : ]]>
+            </line>
+            <line>
+              <![CDATA[All links : Women]]>
+            </line>
+            <line>
+              <![CDATA[All links : ]]>
+            </line>
+            <line>
+              <![CDATA[All links : ]]>
+            </line>
+            <line>
+              <![CDATA[All links : ]]>
+            </line>
+            <line>
+              <![CDATA[All links : ]]>
+            </line>
+            <line>
+              <![CDATA[All links : ]]>
+            </line>
+            <line>
+              <![CDATA[All links : ]]>
+            </line>
+            <line>
+              <![CDATA[All links : ]]>
+            </line>
+            <line>
+              <![CDATA[All links : Specials]]>
+            </line>
+            <line>
+              <![CDATA[All links : New products]]>
+            </line>
+            <line>
+              <![CDATA[All links : Best sellers]]>
+            </line>
+            <line>
+              <![CDATA[All links : Our stores]]>
+            </line>
+            <line>
+              <![CDATA[All links : Contact us]]>
+            </line>
+            <line>
+              <![CDATA[All links : Terms and conditions of use]]>
+            </line>
+            <line>
+              <![CDATA[All links : About us]]>
+            </line>
+            <line>
+              <![CDATA[All links : Sitemap]]>
+            </line>
+            <line>
+              <![CDATA[All links : Ecommerce software by PrestaShop™]]>
+            </line>
+            <line>
+              <![CDATA[All links : My account]]>
+            </line>
+            <line>
+              <![CDATA[All links : My orders]]>
+            </line>
+            <line>
+              <![CDATA[All links : My credit slips]]>
+            </line>
+            <line>
+              <![CDATA[All links : My addresses]]>
+            </line>
+            <line>
+              <![CDATA[All links : My personal info]]>
+            </line>
+            <line>
+              <![CDATA[All links : Sign out]]>
+            </line>
+            <line>
+              <![CDATA[All links : support@seleniumframework.com]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- TCID_102 -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.scripts.AutomationPracticeTest@3ffc5af1]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-12-24T14:08:50Z" finished-at="2021-12-24T14:08:50Z">
+        </test-method> <!-- TCID_104_VerifyAllLinksOnPage -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.scripts.AutomationPracticeTest@43814d18]" name="afterMethod" is-config="true" duration-ms="213" started-at="2021-12-26T21:42:19Z" finished-at="2021-12-26T21:42:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
       </class> <!-- com.scripts.AutomationPracticeTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Automation Practice Test -->
+  </suite> <!-- AutomationPracticeSuite -->
 </testng-results>

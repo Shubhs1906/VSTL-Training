@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="">
+<head>
+  <title>Test Results Report - Automation Practice Test</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="description" content="TestNG unit test results." />
+  <link href="reportng.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="reportng.js"></script>
+</head>
+<body>
+<h1>Automation Practice Test</h1>
+<p>
+  Test duration: 45.898s
+</p>
+
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">com.scripts.AutomationPracticeTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  TCID_102_VerifyProductIsAddedToCart
+      </td>
+  <td class="duration">
+    19.738s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Verify User Signed In And Home Page Is Displayed.<br />
+                                Mouse over to Women.<br />
+                                Click on Summer Dresses Button.<br />
+                                Verify Summer Dresses page is displayed.<br />
+                                Mouse over to Printed Chiffon Dress.<br />
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError: expected [true] but found [false]</b></a><br />
+    <div class="stackTrace" id="exception-0">
+              org.testng.Assert.fail(Assert.java:96)<br />
+              org.testng.Assert.failNotEquals(Assert.java:776)<br />
+              org.testng.Assert.assertTrue(Assert.java:44)<br />
+              org.testng.Assert.assertTrue(Assert.java:54)<br />
+              com.pageFactory.SummerDressesPage.clickOnAddToCartPrintedChiffonDressOnSummerDressesPage(SummerDressesPage.java:51)<br />
+              com.flows.AddToCartFlow.addProductToCart(AddToCartFlow.java:25)<br />
+              com.scripts.AutomationPracticeTest.TCID_102_VerifyProductIsAddedToCart(AutomationPracticeTest.java:60)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
+              java.lang.reflect.Method.invoke(Unknown Source)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:583)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:648)<br />
+              org.testng.TestRunner.run(TestRunner.java:505)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:455)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:364)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1137)<br />
+              org.testng.TestNG.runSuites(TestNG.java:1049)<br />
+              org.testng.TestNG.run(TestNG.java:1017)<br />
+              org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)<br />
+              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br />
+              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br />
+                </div>
+      </td>
+</tr>
+      </table>
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">com.scripts.AutomationPracticeTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  TCID_101_VerifySignInFunctionality
+      </td>
+  <td class="duration">
+    5.939s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Verify Sign In Page Is Displayed.<br />
+                                Click on Signin Button.<br />
+                                Set Username.<br />
+                                Set Password.<br />
+                                Click on Signin Button.<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  TCID_103_GetAllLinksOnSummerDressesPage
+      </td>
+  <td class="duration">
+    0.009s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  TCID_104_VerifyAllLinksOnPage
+      </td>
+  <td class="duration">
+    5.626s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        All links : <br />
+                                All links : SHUBHAM MAGDUM<br />
+                                All links : Sign out<br />
+                                All links : Contact us<br />
+                                All links : <br />
+                                All links : Cart (empty)<br />
+                                All links : <br />
+                                All links : <br />
+                                All links : WOMEN<br />
+                                All links : <br />
+                                All links : <br />
+                                All links : <br />
+                                All links : <br />
+                                All links : <br />
+                                All links : <br />
+                                All links : <br />
+                                All links : DRESSES<br />
+                                All links : <br />
+                                All links : <br />
+                                All links : <br />
+                                All links : T-SHIRTS<br />
+                                All links : <br />
+                                All links : Women<br />
+                                All links : Dresses<br />
+                                All links : S (3)<br />
+                                All links : M (3)<br />
+                                All links : L (3)<br />
+                                All links : White (1)<br />
+                                All links : Black (1)<br />
+                                All links : Orange (1)<br />
+                                All links : Blue (1)<br />
+                                All links : Green (1)<br />
+                                All links : Yellow (3)<br />
+                                All links : Polyester (2)<br />
+                                All links : Viscose (1)<br />
+                                All links : Casual (1)<br />
+                                All links : Girly (2)<br />
+                                All links : Maxi Dress (1)<br />
+                                All links : Midi Dress (1)<br />
+                                All links : Short Dress (1)<br />
+                                All links : In stock (3)<br />
+                                All links : Fashion Manufacturer (3)<br />
+                                All links : New (3)<br />
+                                All links : <br />
+                                All links : <br />
+                                All links : INFORMATION<br />
+                                All links : Delivery<br />
+                                All links : Legal Notice<br />
+                                All links : Terms and conditions of use<br />
+                                All links : About us<br />
+                                All links : Secure payment<br />
+                                All links : Our stores<br />
+                                All links : SPECIALS<br />
+                                All links : <br />
+                                All links : Printed Chiffon Dress<br />
+                                All links : All specials<br />
+                                All links : OUR STORES<br />
+                                All links : <br />
+                                All links : Discover our stores<br />
+                                All links : Grid<br />
+                                All links : List<br />
+                                All links : <br />
+                                All links : <br />
+                                All links : <br />
+                                All links : Printed Summer Dress<br />
+                                All links : <br />
+                                All links : <br />
+                                All links : <br />
+                                All links : <br />
+                                All links : <br />
+                                All links : <br />
+                                All links : <br />
+                                All links : <br />
+                                All links : <br />
+                                All links : <br />
+                                All links : <br />
+                                All links : Printed Summer Dress<br />
+                                All links : Add to cart<br />
+                                All links : More<br />
+                                All links : <br />
+                                All links : <br />
+                                All links : Add to Wishlist<br />
+                                All links : <br />
+                                All links : <br />
+                                All links : <br />
+                                All links : Quick view<br />
+                                All links : Printed Chiffon Dress<br />
+                                All links : Add to cart<br />
+                                All links : More<br />
+                                All links : <br />
+                                All links : <br />
+                                All links : Add to Wishlist<br />
+                                All links : Add to Compare<br />
+                                All links : <br />
+                                All links : <br />
+                                All links : <br />
+                                All links : <br />
+                                All links : Women<br />
+                                All links : <br />
+                                All links : <br />
+                                All links : <br />
+                                All links : <br />
+                                All links : <br />
+                                All links : <br />
+                                All links : <br />
+                                All links : Specials<br />
+                                All links : New products<br />
+                                All links : Best sellers<br />
+                                All links : Our stores<br />
+                                All links : Contact us<br />
+                                All links : Terms and conditions of use<br />
+                                All links : About us<br />
+                                All links : Sitemap<br />
+                                All links : Ecommerce software by PrestaShop™<br />
+                                All links : My account<br />
+                                All links : My orders<br />
+                                All links : My credit slips<br />
+                                All links : My addresses<br />
+                                All links : My personal info<br />
+                                All links : Sign out<br />
+                                All links : support@seleniumframework.com<br />
+                  </div>
+    
+
+      </td>
+</tr>
+      </table>
+  
+</body>
+</html>

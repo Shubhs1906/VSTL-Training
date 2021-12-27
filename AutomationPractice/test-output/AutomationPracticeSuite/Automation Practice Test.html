@@ -1,0 +1,294 @@
+<html>
+<head>
+<title>TestNG:  Automation Practice Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Automation Practice Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>3/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Dec 27 03:11:33 IST 2021</td>
+</tr>
+<tr><td>Total time:</td><td>45 seconds (45997 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.scripts.AutomationPracticeTest.TCID_102_VerifyProductIsAddedToCart()'><b>TCID_102_VerifyProductIsAddedToCart</b><br>Test class: com.scripts.AutomationPracticeTest<br/>
+<a href="#Output-1560702077" onClick='toggleBox("Output-1560702077", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1560702077" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1560702077">
+Verify User Signed In And Home Page Is Displayed.<br/>
+Mouse over to Women.<br/>
+Click on Summer Dresses Button.<br/>
+Verify Summer Dresses page is displayed.<br/>
+Mouse over to Printed Chiffon Dress.<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at com.pageFactory.SummerDressesPage.clickOnAddToCartPrintedChiffonDressOnSummerDressesPage(SummerDressesPage.java:51)
+	at com.flows.AddToCartFlow.addProductToCart(AddToCartFlow.java:25)
+	at com.scripts.AutomationPracticeTest.TCID_102_VerifyProductIsAddedToCart(AutomationPracticeTest.java:60)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1560702077", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1560702077'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at org.testng.Assert.assertTrue(Assert.java:54)
+	at com.pageFactory.SummerDressesPage.clickOnAddToCartPrintedChiffonDressOnSummerDressesPage(SummerDressesPage.java:51)
+	at com.flows.AddToCartFlow.addProductToCart(AddToCartFlow.java:25)
+	at com.scripts.AutomationPracticeTest.TCID_102_VerifyProductIsAddedToCart(AutomationPracticeTest.java:60)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>19</td>
+<td>com.scripts.AutomationPracticeTest@43814d18</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.scripts.AutomationPracticeTest.TCID_101_VerifySignInFunctionality()'><b>TCID_101_VerifySignInFunctionality</b><br>Test class: com.scripts.AutomationPracticeTest<br/>
+<a href="#Output-149225732" onClick='toggleBox("Output-149225732", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-149225732" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-149225732">
+Verify Sign In Page Is Displayed.<br/>
+Click on Signin Button.<br/>
+Set Username.<br/>
+Set Password.<br/>
+Click on Signin Button.<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>com.scripts.AutomationPracticeTest@43814d18</td></tr>
+<tr>
+<td title='com.scripts.AutomationPracticeTest.TCID_103_GetAllLinksOnSummerDressesPage()'><b>TCID_103_GetAllLinksOnSummerDressesPage</b><br>Test class: com.scripts.AutomationPracticeTest</td>
+<td></td>
+<td>0</td>
+<td>com.scripts.AutomationPracticeTest@43814d18</td></tr>
+<tr>
+<td title='com.scripts.AutomationPracticeTest.TCID_104_VerifyAllLinksOnPage()'><b>TCID_104_VerifyAllLinksOnPage</b><br>Test class: com.scripts.AutomationPracticeTest<br/>
+<a href="#Output-544386226" onClick='toggleBox("Output-544386226", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-544386226" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-544386226">
+All links : <br/>
+All links : SHUBHAM MAGDUM<br/>
+All links : Sign out<br/>
+All links : Contact us<br/>
+All links : <br/>
+All links : Cart (empty)<br/>
+All links : <br/>
+All links : <br/>
+All links : WOMEN<br/>
+All links : <br/>
+All links : <br/>
+All links : <br/>
+All links : <br/>
+All links : <br/>
+All links : <br/>
+All links : <br/>
+All links : DRESSES<br/>
+All links : <br/>
+All links : <br/>
+All links : <br/>
+All links : T-SHIRTS<br/>
+All links : <br/>
+All links : Women<br/>
+All links : Dresses<br/>
+All links : S (3)<br/>
+All links : M (3)<br/>
+All links : L (3)<br/>
+All links : White (1)<br/>
+All links : Black (1)<br/>
+All links : Orange (1)<br/>
+All links : Blue (1)<br/>
+All links : Green (1)<br/>
+All links : Yellow (3)<br/>
+All links : Polyester (2)<br/>
+All links : Viscose (1)<br/>
+All links : Casual (1)<br/>
+All links : Girly (2)<br/>
+All links : Maxi Dress (1)<br/>
+All links : Midi Dress (1)<br/>
+All links : Short Dress (1)<br/>
+All links : In stock (3)<br/>
+All links : Fashion Manufacturer (3)<br/>
+All links : New (3)<br/>
+All links : <br/>
+All links : <br/>
+All links : INFORMATION<br/>
+All links : Delivery<br/>
+All links : Legal Notice<br/>
+All links : Terms and conditions of use<br/>
+All links : About us<br/>
+All links : Secure payment<br/>
+All links : Our stores<br/>
+All links : SPECIALS<br/>
+All links : <br/>
+All links : Printed Chiffon Dress<br/>
+All links : All specials<br/>
+All links : OUR STORES<br/>
+All links : <br/>
+All links : Discover our stores<br/>
+All links : Grid<br/>
+All links : List<br/>
+All links : <br/>
+All links : <br/>
+All links : <br/>
+All links : Printed Summer Dress<br/>
+All links : <br/>
+All links : <br/>
+All links : <br/>
+All links : <br/>
+All links : <br/>
+All links : <br/>
+All links : <br/>
+All links : <br/>
+All links : <br/>
+All links : <br/>
+All links : <br/>
+All links : Printed Summer Dress<br/>
+All links : Add to cart<br/>
+All links : More<br/>
+All links : <br/>
+All links : <br/>
+All links : Add to Wishlist<br/>
+All links : <br/>
+All links : <br/>
+All links : <br/>
+All links : Quick view<br/>
+All links : Printed Chiffon Dress<br/>
+All links : Add to cart<br/>
+All links : More<br/>
+All links : <br/>
+All links : <br/>
+All links : Add to Wishlist<br/>
+All links : Add to Compare<br/>
+All links : <br/>
+All links : <br/>
+All links : <br/>
+All links : <br/>
+All links : Women<br/>
+All links : <br/>
+All links : <br/>
+All links : <br/>
+All links : <br/>
+All links : <br/>
+All links : <br/>
+All links : <br/>
+All links : Specials<br/>
+All links : New products<br/>
+All links : Best sellers<br/>
+All links : Our stores<br/>
+All links : Contact us<br/>
+All links : Terms and conditions of use<br/>
+All links : About us<br/>
+All links : Sitemap<br/>
+All links : Ecommerce software by PrestaShop™<br/>
+All links : My account<br/>
+All links : My orders<br/>
+All links : My credit slips<br/>
+All links : My addresses<br/>
+All links : My personal info<br/>
+All links : Sign out<br/>
+All links : support@seleniumframework.com<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>com.scripts.AutomationPracticeTest@43814d18</td></tr>
+</table><p>
+</body>
+</html>
