@@ -58,7 +58,7 @@ public class AutomationPracticeTest extends BaseTest {
 		
 		objHomePage.verifyUserSignedInAndHomePageIsDisplayed();
 		objAddToCartFlow.addProductToCart();
-		//objSummerDressesPage.verifyProductAddedToCart();
+		objSummerDressesPage.verifyProductAddedToCart();
 
 	}
 
@@ -72,7 +72,7 @@ public class AutomationPracticeTest extends BaseTest {
 	@Test(priority = 4)
 	public void TCID_104_VerifyAllLinksOnPage() {
 
-		objSummerDressesPage.getAllLinksOnSummerDressesPage();
+		objSummerDressesPage.verifyAllLinksOnSummerDressesPage();
 
 	}
 }

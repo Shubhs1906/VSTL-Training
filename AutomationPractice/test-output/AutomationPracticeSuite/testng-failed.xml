@@ -9,6 +9,7 @@
     <classes>
       <class name="com.scripts.AutomationPracticeTest">
         <methods>
+          <include name="TCID_101_VerifySignInFunctionality"/>
           <include name="TCID_102_VerifyProductIsAddedToCart"/>
           <include name="beforeMainMethod"/>
           <include name="afterMethod"/>

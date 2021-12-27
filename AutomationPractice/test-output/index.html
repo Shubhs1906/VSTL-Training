@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
+                    <span class="method-stats">4 methods, 2 failed,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -100,6 +100,11 @@
                       <a href="#" panel-name="suite-AutomationPracticeSuite" class="show-methods failed suite-AutomationPracticeSuite"> (show)</a> <!-- show-methods failed suite-AutomationPracticeSuite -->
                     </span>
                     <div class="method-list-content failed suite-AutomationPracticeSuite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AutomationPracticeSuite" title="com.scripts.AutomationPracticeTest" hash-for-method="TCID_101_VerifySignInFunctionality">TCID_101_VerifySignInFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img width="3%" src="failed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-AutomationPracticeSuite" title="com.scripts.AutomationPracticeTest" hash-for-method="TCID_102_VerifyProductIsAddedToCart">TCID_102_VerifyProductIsAddedToCart</a> <!-- method navigator-link -->
@@ -114,11 +119,6 @@
                       <a href="#" panel-name="suite-AutomationPracticeSuite" class="show-methods passed suite-AutomationPracticeSuite"> (show)</a> <!-- show-methods passed suite-AutomationPracticeSuite -->
                     </span>
                     <div class="method-list-content passed suite-AutomationPracticeSuite">
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-AutomationPracticeSuite" title="com.scripts.AutomationPracticeTest" hash-for-method="TCID_101_VerifySignInFunctionality">TCID_101_VerifySignInFunctionality</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-AutomationPracticeSuite" title="com.scripts.AutomationPracticeTest" hash-for-method="TCID_103_GetAllLinksOnSummerDressesPage">TCID_103_GetAllLinksOnSummerDressesPage</a> <!-- method navigator-link -->
@@ -149,13 +149,24 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="TCID_101_VerifySignInFunctionality">
+                  </a> <!-- TCID_101_VerifySignInFunctionality -->
+                  <span class="method-name">TCID_101_VerifySignInFunctionality</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.pageFactory.SignInSignOutPage.verifySignInPageIsDisplayed(SignInSignOutPage.java:27)
+	at com.scripts.AutomationPracticeTest.TCID_101_VerifySignInFunctionality(AutomationPracticeTest.java:51)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="TCID_102_VerifyProductIsAddedToCart">
                   </a> <!-- TCID_102_VerifyProductIsAddedToCart -->
                   <span class="method-name">TCID_102_VerifyProductIsAddedToCart</span>
                   <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
-	at com.pageFactory.SummerDressesPage.clickOnAddToCartPrintedChiffonDressOnSummerDressesPage(SummerDressesPage.java:51)
-	at com.flows.AddToCartFlow.addProductToCart(AddToCartFlow.java:25)
-	at com.scripts.AutomationPracticeTest.TCID_102_VerifyProductIsAddedToCart(AutomationPracticeTest.java:60)
+	at com.pageFactory.HomePage.verifyUserSignedInAndHomePageIsDisplayed(HomePage.java:35)
+	at com.scripts.AutomationPracticeTest.TCID_102_VerifyProductIsAddedToCart(AutomationPracticeTest.java:59)
 ... Removed 29 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -168,13 +179,6 @@
               <span class="class-name">com.scripts.AutomationPracticeTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="TCID_101_VerifySignInFunctionality">
-                  </a> <!-- TCID_101_VerifySignInFunctionality -->
-                  <span class="method-name">TCID_101_VerifySignInFunctionality</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="TCID_103_GetAllLinksOnSummerDressesPage">
@@ -251,24 +255,24 @@ data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'TCID_102_VerifyProductIsAddedToCart')
 data.setCell(0, 2, 'com.scripts.AutomationPracticeTest')
-data.setCell(0, 3, 19738);
+data.setCell(0, 3, 5132);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'TCID_101_VerifySignInFunctionality')
 data.setCell(1, 2, 'com.scripts.AutomationPracticeTest')
-data.setCell(1, 3, 5939);
+data.setCell(1, 3, 5122);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'TCID_104_VerifyAllLinksOnPage')
 data.setCell(2, 2, 'com.scripts.AutomationPracticeTest')
-data.setCell(2, 3, 5626);
+data.setCell(2, 3, 5067);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'TCID_103_GetAllLinksOnSummerDressesPage')
 data.setCell(3, 2, 'com.scripts.AutomationPracticeTest')
-data.setCell(3, 3, 9);
+data.setCell(3, 3, 4);
 window.suiteTableData['AutomationPracticeSuite']= { tableData: data, tableDiv: 'times-div-AutomationPracticeSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 31 seconds</span>
+              <span class="suite-total-time">Total running time: 15 seconds</span>
               <div id="times-div-AutomationPracticeSuite">
               </div> <!-- times-div-AutomationPracticeSuite -->
             </div> <!-- times-div -->
@@ -279,152 +283,6 @@ return data;
             <span class="header-content">Reporter output for AutomationPracticeSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">TCID_104_VerifyAllLinksOnPage</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">All links : </span>
-                <span class="reporter-method-output">All links : SHUBHAM MAGDUM</span>
-                <span class="reporter-method-output">All links : Sign out</span>
-                <span class="reporter-method-output">All links : Contact us</span>
-                <span class="reporter-method-output">All links : </span>
-                <span class="reporter-method-output">All links : Cart (empty)</span>
-                <span class="reporter-method-output">All links : </span>
-                <span class="reporter-method-output">All links : </span>
-                <span class="reporter-method-output">All links : WOMEN</span>
-                <span class="reporter-method-output">All links : </span>
-                <span class="reporter-method-output">All links : </span>
-                <span class="reporter-method-output">All links : </span>
-                <span class="reporter-method-output">All links : </span>
-                <span class="reporter-method-output">All links : </span>
-                <span class="reporter-method-output">All links : </span>
-                <span class="reporter-method-output">All links : </span>
-                <span class="reporter-method-output">All links : DRESSES</span>
-                <span class="reporter-method-output">All links : </span>
-                <span class="reporter-method-output">All links : </span>
-                <span class="reporter-method-output">All links : </span>
-                <span class="reporter-method-output">All links : T-SHIRTS</span>
-                <span class="reporter-method-output">All links : </span>
-                <span class="reporter-method-output">All links : Women</span>
-                <span class="reporter-method-output">All links : Dresses</span>
-                <span class="reporter-method-output">All links : S (3)</span>
-                <span class="reporter-method-output">All links : M (3)</span>
-                <span class="reporter-method-output">All links : L (3)</span>
-                <span class="reporter-method-output">All links : White (1)</span>
-                <span class="reporter-method-output">All links : Black (1)</span>
-                <span class="reporter-method-output">All links : Orange (1)</span>
-                <span class="reporter-method-output">All links : Blue (1)</span>
-                <span class="reporter-method-output">All links : Green (1)</span>
-                <span class="reporter-method-output">All links : Yellow (3)</span>
-                <span class="reporter-method-output">All links : Polyester (2)</span>
-                <span class="reporter-method-output">All links : Viscose (1)</span>
-                <span class="reporter-method-output">All links : Casual (1)</span>
-                <span class="reporter-method-output">All links : Girly (2)</span>
-                <span class="reporter-method-output">All links : Maxi Dress (1)</span>
-                <span class="reporter-method-output">All links : Midi Dress (1)</span>
-                <span class="reporter-method-output">All links : Short Dress (1)</span>
-                <span class="reporter-method-output">All links : In stock (3)</span>
-                <span class="reporter-method-output">All links : Fashion Manufacturer (3)</span>
-                <span class="reporter-method-output">All links : New (3)</span>
-                <span class="reporter-method-output">All links : </span>
-                <span class="reporter-method-output">All links : </span>
-                <span class="reporter-method-output">All links : INFORMATION</span>
-                <span class="reporter-method-output">All links : Delivery</span>
-                <span class="reporter-method-output">All links : Legal Notice</span>
-                <span class="reporter-method-output">All links : Terms and conditions of use</span>
-                <span class="reporter-method-output">All links : About us</span>
-                <span class="reporter-method-output">All links : Secure payment</span>
-                <span class="reporter-method-output">All links : Our stores</span>
-                <span class="reporter-method-output">All links : SPECIALS</span>
-                <span class="reporter-method-output">All links : </span>
-                <span class="reporter-method-output">All links : Printed Chiffon Dress</span>
-                <span class="reporter-method-output">All links : All specials</span>
-                <span class="reporter-method-output">All links : OUR STORES</span>
-                <span class="reporter-method-output">All links : </span>
-                <span class="reporter-method-output">All links : Discover our stores</span>
-                <span class="reporter-method-output">All links : Grid</span>
-                <span class="reporter-method-output">All links : List</span>
-                <span class="reporter-method-output">All links : </span>
-                <span class="reporter-method-output">All links : </span>
-                <span class="reporter-method-output">All links : </span>
-                <span class="reporter-method-output">All links : Printed Summer Dress</span>
-                <span class="reporter-method-output">All links : </span>
-                <span class="reporter-method-output">All links : </span>
-                <span class="reporter-method-output">All links : </span>
-                <span class="reporter-method-output">All links : </span>
-                <span class="reporter-method-output">All links : </span>
-                <span class="reporter-method-output">All links : </span>
-                <span class="reporter-method-output">All links : </span>
-                <span class="reporter-method-output">All links : </span>
-                <span class="reporter-method-output">All links : </span>
-                <span class="reporter-method-output">All links : </span>
-                <span class="reporter-method-output">All links : </span>
-                <span class="reporter-method-output">All links : Printed Summer Dress</span>
-                <span class="reporter-method-output">All links : Add to cart</span>
-                <span class="reporter-method-output">All links : More</span>
-                <span class="reporter-method-output">All links : </span>
-                <span class="reporter-method-output">All links : </span>
-                <span class="reporter-method-output">All links : Add to Wishlist</span>
-                <span class="reporter-method-output">All links : </span>
-                <span class="reporter-method-output">All links : </span>
-                <span class="reporter-method-output">All links : </span>
-                <span class="reporter-method-output">All links : Quick view</span>
-                <span class="reporter-method-output">All links : Printed Chiffon Dress</span>
-                <span class="reporter-method-output">All links : Add to cart</span>
-                <span class="reporter-method-output">All links : More</span>
-                <span class="reporter-method-output">All links : </span>
-                <span class="reporter-method-output">All links : </span>
-                <span class="reporter-method-output">All links : Add to Wishlist</span>
-                <span class="reporter-method-output">All links : Add to Compare</span>
-                <span class="reporter-method-output">All links : </span>
-                <span class="reporter-method-output">All links : </span>
-                <span class="reporter-method-output">All links : </span>
-                <span class="reporter-method-output">All links : </span>
-                <span class="reporter-method-output">All links : Women</span>
-                <span class="reporter-method-output">All links : </span>
-                <span class="reporter-method-output">All links : </span>
-                <span class="reporter-method-output">All links : </span>
-                <span class="reporter-method-output">All links : </span>
-                <span class="reporter-method-output">All links : </span>
-                <span class="reporter-method-output">All links : </span>
-                <span class="reporter-method-output">All links : </span>
-                <span class="reporter-method-output">All links : Specials</span>
-                <span class="reporter-method-output">All links : New products</span>
-                <span class="reporter-method-output">All links : Best sellers</span>
-                <span class="reporter-method-output">All links : Our stores</span>
-                <span class="reporter-method-output">All links : Contact us</span>
-                <span class="reporter-method-output">All links : Terms and conditions of use</span>
-                <span class="reporter-method-output">All links : About us</span>
-                <span class="reporter-method-output">All links : Sitemap</span>
-                <span class="reporter-method-output">All links : Ecommerce software by PrestaShop™</span>
-                <span class="reporter-method-output">All links : My account</span>
-                <span class="reporter-method-output">All links : My orders</span>
-                <span class="reporter-method-output">All links : My credit slips</span>
-                <span class="reporter-method-output">All links : My addresses</span>
-                <span class="reporter-method-output">All links : My personal info</span>
-                <span class="reporter-method-output">All links : Sign out</span>
-                <span class="reporter-method-output">All links : support@seleniumframework.com</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">TCID_101_VerifySignInFunctionality</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Verify Sign In Page Is Displayed.</span>
-                <span class="reporter-method-output">Click on Signin Button.</span>
-                <span class="reporter-method-output">Set Username.</span>
-                <span class="reporter-method-output">Set Password.</span>
-                <span class="reporter-method-output">Click on Signin Button.</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">TCID_102_VerifyProductIsAddedToCart</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Verify User Signed In And Home Page Is Displayed.</span>
-                <span class="reporter-method-output">Mouse over to Women.</span>
-                <span class="reporter-method-output">Click on Summer Dresses Button.</span>
-                <span class="reporter-method-output">Verify Summer Dresses page is displayed.</span>
-                <span class="reporter-method-output">Mouse over to Printed Chiffon Dress.</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-AutomationPracticeSuite" class="panel">
@@ -446,26 +304,28 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">TCID_101_VerifySignInFunctionality</span>
-                <span class="method-start">14411 ms</span>
+                <span class="method-start">12065 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">TCID_102_VerifyProductIsAddedToCart</span>
-                <span class="method-start">20366 ms</span>
+                <span class="method-start">17215 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TCID_103_GetAllLinksOnSummerDressesPage</span>
-                <span class="method-start">40112 ms</span>
+                <span class="method-start">22370 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TCID_104_VerifyAllLinksOnPage</span>
-                <span class="method-start">40124 ms</span>
+                <span class="method-start">22379 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">45753 ms</span>
+                <span class="method-start">27450 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
