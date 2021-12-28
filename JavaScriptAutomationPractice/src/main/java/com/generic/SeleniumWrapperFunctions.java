@@ -23,43 +23,37 @@ public class SeleniumWrapperFunctions {
 
 	private BaseTest objBaseTest;
 
-	public SeleniumWrapperFunctions(BaseTest baseTest){
+	public SeleniumWrapperFunctions(BaseTest baseTest) {
 		this.objBaseTest = baseTest;
 
 	}
-	
-	
-	
+
 	public boolean setText(By locator, String strInputValue) {
 
 		try {
 			// JavaScriptExecuter
-			
+
 			WebElement element = objBaseTest.getDriver().findElement(locator);
-			JavascriptExecutor executor = (JavascriptExecutor)objBaseTest.getDriver();
-			executor.executeScript("arguments[0].value=arguments[1]", element,strInputValue);
-			
-			
+			JavascriptExecutor executor = (JavascriptExecutor) objBaseTest.getDriver();
+			executor.executeScript("arguments[0].value=arguments[1]", element, strInputValue);
+
 			return true;
 		} catch (Exception exception) {
 			System.out.println("I got exception : " + exception.getMessage());
 			exception.printStackTrace();
 			return false;
 		}
-		
-	}
 
-	
+	}
 
 	public boolean clickOption(By locator) {
 
 		try {
 			// JavaScriptExecuter
 			WebElement element = objBaseTest.getDriver().findElement(locator);
-			JavascriptExecutor executor = (JavascriptExecutor)objBaseTest.getDriver();
+			JavascriptExecutor executor = (JavascriptExecutor) objBaseTest.getDriver();
 			executor.executeScript("arguments[0].click();", element);
-			
-			
+
 			return true;
 		} catch (Exception exception) {
 			System.out.println("I got exception : " + exception.getMessage());
@@ -68,54 +62,51 @@ public class SeleniumWrapperFunctions {
 		}
 
 	}
-	
-	public boolean getTitle(){
+
+	public boolean getTitle() {
 		try {
 			// JavaScriptExecuter
-			
-			
-			JavascriptExecutor executor = (JavascriptExecutor)objBaseTest.getDriver();
+
+			JavascriptExecutor executor = (JavascriptExecutor) objBaseTest.getDriver();
 			String strTitle = (String) executor.executeScript("return document.title;");
-			System.out.println("Title is : "+strTitle);
-			
+			System.out.println("Title is : " + strTitle);
+
 			return true;
 		} catch (Exception exception) {
 			System.out.println("I got exception : " + exception.getMessage());
 			exception.printStackTrace();
 			return false;
 		}
-		
-		
+
 	}
 
-	
-	public boolean getText(By locator){
+	public boolean getText(By locator) {
 		try {
 			// JavaScriptExecuter
-			
+
 			WebElement element = objBaseTest.getDriver().findElement(locator);
-			JavascriptExecutor executor = (JavascriptExecutor)objBaseTest.getDriver();
+			JavascriptExecutor executor = (JavascriptExecutor) objBaseTest.getDriver();
 			String strText = (String) executor.executeScript("return arguments[0].text;", element);
-			System.out.println("Text : "+strText);
-			
+			System.out.println("Text : " + strText);
+
 			return true;
 		} catch (Exception exception) {
 			System.out.println("I got exception : " + exception.getMessage());
 			exception.printStackTrace();
 			return false;
 		}
-		
+
 	}
-	
-public boolean scrollToView(By locator){
-		
+
+	public boolean scrollToView(By locator) {
+
 		try {
 			// JavaScriptExecuter
-			
+
 			WebElement element = objBaseTest.getDriver().findElement(locator);
-			JavascriptExecutor executor = (JavascriptExecutor)objBaseTest.getDriver();
+			JavascriptExecutor executor = (JavascriptExecutor) objBaseTest.getDriver();
 			executor.executeScript("arguments[0].scrollIntoView(true);", element);
-			
+
 			return true;
 		} catch (Exception exception) {
 			System.out.println("I got exception : " + exception.getMessage());
@@ -123,10 +114,7 @@ public boolean scrollToView(By locator){
 			return false;
 		}
 	}
-	
-	
-	
-	
+
 	public boolean selectDropDownOption(By locator, String strDropDownOption, String strOptionType) {
 
 		try {
@@ -146,8 +134,6 @@ public boolean scrollToView(By locator){
 			return false;
 		}
 	}
-	
-	
 
 	public boolean dragAndDropOption(By fromlocator, By toLocator) {
 
@@ -262,14 +248,13 @@ public boolean scrollToView(By locator){
 		}
 
 	}
-	
-	public boolean setFluentWait(By locator, long lngTimeOutInSeconds, long lngPollingInSec){
+
+	public boolean setFluentWait(By locator, long lngTimeOutInSeconds, long lngPollingInSec) {
 		try {
-			Wait<WebDriver> wait =  new FluentWait<>(objBaseTest.getDriver())
+			Wait<WebDriver> wait = new FluentWait<>(objBaseTest.getDriver())
 					.withTimeout(Duration.ofSeconds(lngTimeOutInSeconds))
-			.pollingEvery(Duration.ofSeconds(lngPollingInSec))
-			.ignoring(NoSuchElementException.class);
-			
+					.pollingEvery(Duration.ofSeconds(lngPollingInSec)).ignoring(NoSuchElementException.class);
+
 			wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
 			return true;
 

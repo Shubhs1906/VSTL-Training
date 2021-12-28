@@ -3,15 +3,18 @@ package com.scripts;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import com.flows.SignInSignOutFlow;
 import com.flows.AddToCartFlow;
 import com.generic.BaseTest;
+import com.generic.CustomListeners;
 import com.generic.Utilities;
 import com.pageFactory.SignInSignOutPage;
 import com.pageFactory.SummerDressesPage;
 import com.pageFactory.HomePage;
 
+@Listeners(CustomListeners.class)
 public class AutomationPracticeTest extends BaseTest {
 
 	static WebDriver driver = null;
@@ -30,7 +33,7 @@ public class AutomationPracticeTest extends BaseTest {
 		objSignInSignOutFlow = new SignInSignOutFlow(this);
 		objSummerDressesPage = new SummerDressesPage(this);
 	}
-
+	
 	@BeforeClass
 	public void beforeMainMethod() {
 
@@ -58,6 +61,7 @@ public class AutomationPracticeTest extends BaseTest {
 		
 		objHomePage.verifyUserSignedInAndHomePageIsDisplayed();
 		objAddToCartFlow.addProductToCart();
+		
 		objSummerDressesPage.verifyProductAddedToCart();
 
 	}
@@ -65,14 +69,14 @@ public class AutomationPracticeTest extends BaseTest {
 	@Test(priority = 3)
 	public void TCID_103_GetAllLinksOnSummerDressesPage() {
 
-		// objSummerDressesPage.getAllLinksOnHomePage();
+		//objSummerDressesPage.getAllLinksOnHomePage();
 
 	}
 
 	@Test(priority = 4)
 	public void TCID_104_VerifyAllLinksOnPage() {
 
-		objSummerDressesPage.verifyAllLinksOnSummerDressesPage();
+		//objSummerDressesPage.verifyAllLinksOnSummerDressesPage();
 
 	}
 }

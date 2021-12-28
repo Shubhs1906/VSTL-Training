@@ -16,8 +16,8 @@ public class SignUpPage {
 
 	}
 
-	// Locators
-	By loc_clickCreateNewAcc = By.xpath("//div[@class='_6ltg']//a[@role='button']");
+	// Locators  //div[@class='_6ltg']//a[@role='button']
+	By loc_clickCreateNewAcc = By.xpath("//div[@class='_6ltg']//a[@role='buon']");
 	By loc_inpFirstName = By.xpath("//div[@id='reg_form_box']//input[@name='firstname']");
 	By loc_inpSurName = By.xpath("//div[@id='reg_form_box']//input[@name='lastname']");
 	By loc_inpMobNum = By.xpath("//input[@name='reg_email__']");

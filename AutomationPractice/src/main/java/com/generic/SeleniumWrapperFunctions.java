@@ -171,29 +171,28 @@ public class SeleniumWrapperFunctions {
 
 	}
 
-	public boolean setExplicitWait(By locator, long lngTimeOutInSeconds) {
+	public void setExplicitWait(By locator, long lngTimeOutInSeconds) {
+		WebDriverWait wait = new WebDriverWait(objBaseTest.getDriver(), lngTimeOutInSeconds);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
 
-		try {
-			WebDriverWait wait = new WebDriverWait(objBaseTest.getDriver(), lngTimeOutInSeconds);
-			wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
-			return true;
-
-		} catch (Exception exception) {
-			System.out.println("Expection is :" + exception.getMessage());
-			exception.printStackTrace();
-
-			return false;
-		}
+		/*
+		 * try {
+		 * 
+		 * return true; } catch (Exception exception) {
+		 * System.out.println("Expection is :" + exception.getMessage());
+		 * exception.printStackTrace();
+		 * 
+		 * return false; }
+		 */
 
 	}
-	
-	public boolean setFluentWait(By locator, long lngTimeOutInSeconds, long lngPollingInSec){
+
+	public boolean setFluentWait(By locator, long lngTimeOutInSeconds, long lngPollingInSec) {
 		try {
-			Wait<WebDriver> wait =  new FluentWait<>(objBaseTest.getDriver())
+			Wait<WebDriver> wait = new FluentWait<>(objBaseTest.getDriver())
 					.withTimeout(Duration.ofSeconds(lngTimeOutInSeconds))
-			.pollingEvery(Duration.ofSeconds(lngPollingInSec))
-			.ignoring(NoSuchElementException.class);
-			
+					.pollingEvery(Duration.ofSeconds(lngPollingInSec)).ignoring(NoSuchElementException.class);
+
 			wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
 			return true;
 

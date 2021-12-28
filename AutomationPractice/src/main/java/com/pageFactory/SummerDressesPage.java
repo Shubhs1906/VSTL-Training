@@ -18,8 +18,8 @@ public class SummerDressesPage {
 
 	}
 
-	// Locators
-	By loc_hdrSummerDresses = By.xpath("//span[contains(text(),'Summer Dresses')][@class='category-name']");
+	// Locators  //span[contains(text(),'Summer Dresses')][@class='category-name']
+	By loc_hdrSummerDresses = By.xpath("//span[contains(text(),'Summer Dresses')][@class='categorycategory-name']");
 	By loc_imgPrintedChiffonDress = By.xpath("//img[@title='Printed Chiffon Dress']");
 	By loc_btnAddToCart = By
 			.xpath("//img[@title='Printed Chiffon Dress']/following::span[contains(text(),'Add to cart')]");

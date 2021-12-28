@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>4/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>3/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Dec 27 03:06:24 IST 2021</td>
+<td>Started on:</td><td>Tue Dec 28 21:42:57 IST 2021</td>
 </tr>
-<tr><td>Total time:</td><td>42 seconds (42681 ms)</td>
+<tr><td>Total time:</td><td>90 seconds (90541 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,96 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.scripts.AutomationPracticeTest.TCID_102_VerifyProductIsAddedToCart()'><b>TCID_102_VerifyProductIsAddedToCart</b><br>Test class: com.scripts.AutomationPracticeTest<br/>
+<a href="#Output-157168588" onClick='toggleBox("Output-157168588", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-157168588" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-157168588">
+Verify User Signed In And Home Page Is Displayed.<br/>
+Mouse over to Women.<br/>
+Click on Summer Dresses Button.<br/>
+ <a href='C:\Users\admin\AppData\Local\Temp\screenshot6111407698395362126.png'> <screenshot src='C:\Users\admin\AppData\Local\Temp\screenshot6111407698395362126.png' height='200' width='200'/> </a>  <br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at org.testng.Assert.assertTrue(Assert.java:54)
+	at com.pageFactory.SummerDressesPage.verifySummerDressesPageIsDisplayed(SummerDressesPage.java:36)
+	at com.flows.AddToCartFlow.addProductToCart(AddToCartFlow.java:23)
+	at com.scripts.AutomationPracticeTest.TCID_102_VerifyProductIsAddedToCart(AutomationPracticeTest.java:63)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace157168588", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace157168588'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at org.testng.Assert.assertTrue(Assert.java:54)
+	at com.pageFactory.SummerDressesPage.verifySummerDressesPageIsDisplayed(SummerDressesPage.java:36)
+	at com.flows.AddToCartFlow.addProductToCart(AddToCartFlow.java:23)
+	at com.scripts.AutomationPracticeTest.TCID_102_VerifyProductIsAddedToCart(AutomationPracticeTest.java:63)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>21</td>
+<td>com.scripts.AutomationPracticeTest@ae45eb6</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,10 +166,10 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.scripts.AutomationPracticeTest.TCID_101_VerifySignInFunctionality()'><b>TCID_101_VerifySignInFunctionality</b><br>Test class: com.scripts.AutomationPracticeTest<br/>
-<a href="#Output-1642785848" onClick='toggleBox("Output-1642785848", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1550228904" onClick='toggleBox("Output-1550228904", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1642785848" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1642785848">
+<a href="#Output-1550228904" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1550228904">
 Verify Sign In Page Is Displayed.<br/>
 Click on Signin Button.<br/>
 Set Username.<br/>
@@ -88,108 +178,18 @@ Click on Signin Button.<br/>
 </div>
 </td>
 <td></td>
-<td>8</td>
-<td>com.scripts.AutomationPracticeTest@3ffc5af1</td></tr>
-<tr>
-<td title='com.scripts.AutomationPracticeTest.TCID_102_VerifyProductIsAddedToCart()'><b>TCID_102_VerifyProductIsAddedToCart</b><br>Test class: com.scripts.AutomationPracticeTest<br/>
-<a href="#Output-406375608" onClick='toggleBox("Output-406375608", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-406375608" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-406375608">
-Verify User Signed In And Home Page Is Displayed.<br/>
-Mouse over to Women.<br/>
-Click on Summer Dresses Button.<br/>
-Verify Summer Dresses page is displayed.<br/>
-Mouse over to Printed Chiffon Dress.<br/>
-click on add To cart.<br/>
-Click On Continue shopping.<br/>
-Click On My Cart.<br/>
-</div>
-</td>
-<td></td>
-<td>8</td>
-<td>com.scripts.AutomationPracticeTest@3ffc5af1</td></tr>
+<td>10</td>
+<td>com.scripts.AutomationPracticeTest@ae45eb6</td></tr>
 <tr>
 <td title='com.scripts.AutomationPracticeTest.TCID_103_GetAllLinksOnSummerDressesPage()'><b>TCID_103_GetAllLinksOnSummerDressesPage</b><br>Test class: com.scripts.AutomationPracticeTest</td>
 <td></td>
 <td>0</td>
-<td>com.scripts.AutomationPracticeTest@3ffc5af1</td></tr>
+<td>com.scripts.AutomationPracticeTest@ae45eb6</td></tr>
 <tr>
-<td title='com.scripts.AutomationPracticeTest.TCID_104_VerifyAllLinksOnPage()'><b>TCID_104_VerifyAllLinksOnPage</b><br>Test class: com.scripts.AutomationPracticeTest<br/>
-<a href="#Output-1367165453" onClick='toggleBox("Output-1367165453", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1367165453" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1367165453">
-All links : <br/>
-All links : SHUBHAM MAGDUM<br/>
-All links : Sign out<br/>
-All links : Contact us<br/>
-All links : <br/>
-All links : Cart 1 Product<br/>
-All links : <br/>
-All links : <br/>
-All links : <br/>
-All links : <br/>
-All links : <br/>
-All links : <br/>
-All links : WOMEN<br/>
-All links : <br/>
-All links : <br/>
-All links : <br/>
-All links : <br/>
-All links : <br/>
-All links : <br/>
-All links : <br/>
-All links : DRESSES<br/>
-All links : <br/>
-All links : <br/>
-All links : <br/>
-All links : T-SHIRTS<br/>
-All links : <br/>
-All links : <br/>
-All links : <br/>
-All links : <br/>
-All links : <br/>
-All links : Printed Chiffon Dress<br/>
-All links : Color : Yellow, Size : S<br/>
-All links : <br/>
-All links : <br/>
-All links : <br/>
-All links : Proceed to checkout<br/>
-All links : Continue shopping<br/>
-All links : <br/>
-All links : <br/>
-All links : <br/>
-All links : <br/>
-All links : Women<br/>
-All links : <br/>
-All links : <br/>
-All links : <br/>
-All links : <br/>
-All links : <br/>
-All links : <br/>
-All links : <br/>
-All links : Specials<br/>
-All links : New products<br/>
-All links : Best sellers<br/>
-All links : Our stores<br/>
-All links : Contact us<br/>
-All links : Terms and conditions of use<br/>
-All links : About us<br/>
-All links : Sitemap<br/>
-All links : Ecommerce software by PrestaShop™<br/>
-All links : My account<br/>
-All links : My orders<br/>
-All links : My credit slips<br/>
-All links : My addresses<br/>
-All links : My personal info<br/>
-All links : Sign out<br/>
-All links : support@seleniumframework.com<br/>
-</div>
-</td>
+<td title='com.scripts.AutomationPracticeTest.TCID_104_VerifyAllLinksOnPage()'><b>TCID_104_VerifyAllLinksOnPage</b><br>Test class: com.scripts.AutomationPracticeTest</td>
 <td></td>
-<td>2</td>
-<td>com.scripts.AutomationPracticeTest@3ffc5af1</td></tr>
+<td>0</td>
+<td>com.scripts.AutomationPracticeTest@ae45eb6</td></tr>
 </table><p>
 </body>
 </html>

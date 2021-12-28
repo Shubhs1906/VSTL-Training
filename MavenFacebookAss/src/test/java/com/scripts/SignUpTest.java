@@ -3,12 +3,14 @@ package com.scripts;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import com.pageFactory.SignUpPage;
 import com.generic.BaseTest;
+import com.generic.CustomListeners;
 import com.generic.SeleniumWrapperFunctions;
 import com.generic.Utilities;
-
+@Listeners(CustomListeners.class)
 public class SignUpTest extends BaseTest {
 
 	private static int getBirthDate;

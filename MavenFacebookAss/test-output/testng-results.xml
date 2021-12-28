@@ -1,165 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="3" ignored="0" total="6" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="90647" started-at="2021-12-22T08:28:07Z" finished-at="2021-12-22T08:29:37Z">
+  <suite name="Default suite" duration-ms="32226" started-at="2021-12-28T13:00:47Z" finished-at="2021-12-28T13:01:20Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="90647" started-at="2021-12-22T08:28:07Z" finished-at="2021-12-22T08:29:37Z">
-      <class name="com.herokuapp.scripts.ActionEventTest">
-        <test-method status="PASS" signature="beforeMainMethod()[pri:0, instance:com.herokuapp.scripts.ActionEventTest@4c70fda8]" name="beforeMainMethod" is-config="true" duration-ms="27473" started-at="2021-12-22T08:28:07Z" finished-at="2021-12-22T08:28:34Z">
+    <test name="Default test" duration-ms="32226" started-at="2021-12-28T13:00:47Z" finished-at="2021-12-28T13:01:20Z">
+      <class name="com.scripts.SignUpTest">
+        <test-method status="PASS" signature="beforeMainMethod()[pri:0, instance:com.scripts.SignUpTest@46d56d67]" name="beforeMainMethod" is-config="true" duration-ms="23912" started-at="2021-12-28T13:00:47Z" finished-at="2021-12-28T13:01:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMainMethod -->
-        <test-method status="FAIL" signature="clearWrittenTextTest()[pri:0, instance:com.herokuapp.scripts.ActionEventTest@4c70fda8]" name="clearWrittenTextTest" duration-ms="20161" started-at="2021-12-22T08:28:34Z" finished-at="2021-12-22T08:28:54Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertTrue(Assert.java:44)
-at org.testng.Assert.assertTrue(Assert.java:54)
-at com.herokuapp.pageFactory.ActionEventPage.clearWrittenText(ActionEventPage.java:29)
-at com.herokuapp.scripts.ActionEventTest.clearWrittenTextTest(ActionEventTest.java:45)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method status="PASS" signature="selectCreateNewAccountTest()[pri:1, instance:com.scripts.SignUpTest@46d56d67]" name="selectCreateNewAccountTest" duration-ms="296" started-at="2021-12-28T13:01:11Z" finished-at="2021-12-28T13:01:12Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clearWrittenTextTest -->
-        <test-method status="FAIL" signature="dragAndDropObjectTest()[pri:0, instance:com.herokuapp.scripts.ActionEventTest@4c70fda8]" name="dragAndDropObjectTest" duration-ms="20229" started-at="2021-12-22T08:28:54Z" finished-at="2021-12-22T08:29:15Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertTrue(Assert.java:44)
-at org.testng.Assert.assertTrue(Assert.java:54)
-at com.herokuapp.pageFactory.ActionEventPage.dragAndDropObject(ActionEventPage.java:25)
-at com.herokuapp.scripts.ActionEventTest.dragAndDropObjectTest(ActionEventTest.java:39)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        </test-method> <!-- selectCreateNewAccountTest -->
+        <test-method status="PASS" signature="inputNameTest()[pri:2, instance:com.scripts.SignUpTest@46d56d67]" name="inputNameTest" duration-ms="2692" started-at="2021-12-28T13:01:12Z" finished-at="2021-12-28T13:01:14Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- dragAndDropObjectTest -->
-        <test-method status="PASS" signature="navigateBackTest()[pri:0, instance:com.herokuapp.scripts.ActionEventTest@4c70fda8]" name="navigateBackTest" duration-ms="1124" started-at="2021-12-22T08:29:15Z" finished-at="2021-12-22T08:29:16Z">
+        </test-method> <!-- inputNameTest -->
+        <test-method status="PASS" signature="inputEmailAddressTest()[pri:3, instance:com.scripts.SignUpTest@46d56d67]" name="inputEmailAddressTest" duration-ms="3452" started-at="2021-12-28T13:01:14Z" finished-at="2021-12-28T13:01:18Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- navigateBackTest -->
-        <test-method status="PASS" signature="navigateForwardTest()[pri:0, instance:com.herokuapp.scripts.ActionEventTest@4c70fda8]" name="navigateForwardTest" duration-ms="234" started-at="2021-12-22T08:29:16Z" finished-at="2021-12-22T08:29:16Z">
+        </test-method> <!-- inputEmailAddressTest -->
+        <test-method status="PASS" signature="inputPasswordTest()[pri:4, instance:com.scripts.SignUpTest@46d56d67]" name="inputPasswordTest" duration-ms="323" started-at="2021-12-28T13:01:18Z" finished-at="2021-12-28T13:01:18Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- navigateForwardTest -->
-        <test-method status="PASS" signature="navigateRefreshTest()[pri:0, instance:com.herokuapp.scripts.ActionEventTest@4c70fda8]" name="navigateRefreshTest" duration-ms="1260" started-at="2021-12-22T08:29:16Z" finished-at="2021-12-22T08:29:17Z">
+        </test-method> <!-- inputPasswordTest -->
+        <test-method status="PASS" signature="inputDateTest()[pri:5, instance:com.scripts.SignUpTest@46d56d67]" name="inputDateTest" duration-ms="1118" started-at="2021-12-28T13:01:18Z" finished-at="2021-12-28T13:01:19Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- navigateRefreshTest -->
-        <test-method status="FAIL" signature="selectDDBoxTest()[pri:0, instance:com.herokuapp.scripts.ActionEventTest@4c70fda8]" name="selectDDBoxTest" duration-ms="20048" started-at="2021-12-22T08:29:17Z" finished-at="2021-12-22T08:29:37Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertTrue(Assert.java:44)
-at org.testng.Assert.assertTrue(Assert.java:54)
-at com.herokuapp.pageFactory.ActionEventPage.selectDDBox(ActionEventPage.java:37)
-at com.herokuapp.scripts.ActionEventTest.selectDDBoxTest(ActionEventTest.java:65)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        </test-method> <!-- inputDateTest -->
+        <test-method status="PASS" signature="selectGenderTest()[pri:6, instance:com.scripts.SignUpTest@46d56d67]" name="selectGenderTest" duration-ms="263" started-at="2021-12-28T13:01:19Z" finished-at="2021-12-28T13:01:20Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- selectDDBoxTest -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.herokuapp.scripts.ActionEventTest@4c70fda8]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-12-22T08:29:37Z" finished-at="2021-12-22T08:29:37Z">
+        </test-method> <!-- selectGenderTest -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.scripts.SignUpTest@46d56d67]" name="afterMethod" is-config="true" duration-ms="13" started-at="2021-12-28T13:01:20Z" finished-at="2021-12-28T13:01:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-      </class> <!-- com.herokuapp.scripts.ActionEventTest -->
+      </class> <!-- com.scripts.SignUpTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

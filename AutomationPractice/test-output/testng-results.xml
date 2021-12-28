@@ -1,61 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" ignored="0" total="4" passed="2">
+<testng-results skipped="0" failed="1" ignored="0" total="4" passed="3">
   <reporter-output>
+    <line>
+      <![CDATA[Verify Sign In Page Is Displayed.]]>
+    </line>
+    <line>
+      <![CDATA[Click on Signin Button.]]>
+    </line>
+    <line>
+      <![CDATA[Set Username.]]>
+    </line>
+    <line>
+      <![CDATA[Set Password.]]>
+    </line>
+    <line>
+      <![CDATA[Click on Signin Button.]]>
+    </line>
+    <line>
+      <![CDATA[Verify User Signed In And Home Page Is Displayed.]]>
+    </line>
+    <line>
+      <![CDATA[Mouse over to Women.]]>
+    </line>
+    <line>
+      <![CDATA[Click on Summer Dresses Button.]]>
+    </line>
+    <line>
+      <![CDATA[ <a href='C:\Users\admin\AppData\Local\Temp\screenshot6111407698395362126.png'> <screenshot src='C:\Users\admin\AppData\Local\Temp\screenshot6111407698395362126.png' height='200' width='200'/> </a>  ]]>
+    </line>
   </reporter-output>
-  <suite name="AutomationPracticeSuite" duration-ms="27745" started-at="2021-12-27T07:50:12Z" finished-at="2021-12-27T07:50:39Z">
+  <suite name="Default suite" duration-ms="90541" started-at="2021-12-28T16:12:57Z" finished-at="2021-12-28T16:14:27Z">
     <groups>
     </groups>
-    <test name="Automation Practice Test" duration-ms="27745" started-at="2021-12-27T07:50:12Z" finished-at="2021-12-27T07:50:39Z">
+    <test name="Default test" duration-ms="90541" started-at="2021-12-28T16:12:57Z" finished-at="2021-12-28T16:14:27Z">
       <class name="com.scripts.AutomationPracticeTest">
-        <test-method status="PASS" signature="beforeMainMethod()[pri:0, instance:com.scripts.AutomationPracticeTest@43814d18]" name="beforeMainMethod" is-config="true" duration-ms="12042" started-at="2021-12-27T07:50:12Z" finished-at="2021-12-27T07:50:24Z">
+        <test-method status="PASS" signature="beforeMainMethod()[pri:0, instance:com.scripts.AutomationPracticeTest@ae45eb6]" name="beforeMainMethod" is-config="true" duration-ms="57090" started-at="2021-12-28T16:12:57Z" finished-at="2021-12-28T16:13:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMainMethod -->
-        <test-method status="FAIL" signature="TCID_101_VerifySignInFunctionality()[pri:1, instance:com.scripts.AutomationPracticeTest@43814d18]" name="TCID_101_VerifySignInFunctionality" duration-ms="5122" started-at="2021-12-27T07:50:24Z" finished-at="2021-12-27T07:50:29Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertTrue(Assert.java:44)
-at org.testng.Assert.assertTrue(Assert.java:54)
-at com.pageFactory.SignInSignOutPage.verifySignInPageIsDisplayed(SignInSignOutPage.java:27)
-at com.scripts.AutomationPracticeTest.TCID_101_VerifySignInFunctionality(AutomationPracticeTest.java:51)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method status="PASS" signature="TCID_101_VerifySignInFunctionality()[pri:1, instance:com.scripts.AutomationPracticeTest@ae45eb6]" name="TCID_101_VerifySignInFunctionality" duration-ms="10490" started-at="2021-12-28T16:13:54Z" finished-at="2021-12-28T16:14:04Z">
           <reporter-output>
+            <line>
+              <![CDATA[Verify Sign In Page Is Displayed.]]>
+            </line>
+            <line>
+              <![CDATA[Click on Signin Button.]]>
+            </line>
+            <line>
+              <![CDATA[Set Username.]]>
+            </line>
+            <line>
+              <![CDATA[Set Password.]]>
+            </line>
+            <line>
+              <![CDATA[Click on Signin Button.]]>
+            </line>
           </reporter-output>
         </test-method> <!-- TCID_101_VerifySignInFunctionality -->
-        <test-method status="FAIL" signature="TCID_102_VerifyProductIsAddedToCart()[pri:2, instance:com.scripts.AutomationPracticeTest@43814d18]" name="TCID_102_VerifyProductIsAddedToCart" duration-ms="5132" started-at="2021-12-27T07:50:29Z" finished-at="2021-12-27T07:50:34Z">
+        <test-method status="FAIL" signature="TCID_102_VerifyProductIsAddedToCart()[pri:2, instance:com.scripts.AutomationPracticeTest@ae45eb6]" name="TCID_102_VerifyProductIsAddedToCart" duration-ms="21322" started-at="2021-12-28T16:14:05Z" finished-at="2021-12-28T16:14:26Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -66,8 +68,9 @@ at org.testng.Assert.fail(Assert.java:96)
 at org.testng.Assert.failNotEquals(Assert.java:776)
 at org.testng.Assert.assertTrue(Assert.java:44)
 at org.testng.Assert.assertTrue(Assert.java:54)
-at com.pageFactory.HomePage.verifyUserSignedInAndHomePageIsDisplayed(HomePage.java:35)
-at com.scripts.AutomationPracticeTest.TCID_102_VerifyProductIsAddedToCart(AutomationPracticeTest.java:59)
+at com.pageFactory.SummerDressesPage.verifySummerDressesPageIsDisplayed(SummerDressesPage.java:36)
+at com.flows.AddToCartFlow.addProductToCart(AddToCartFlow.java:23)
+at com.scripts.AutomationPracticeTest.TCID_102_VerifyProductIsAddedToCart(AutomationPracticeTest.java:63)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -97,21 +100,33 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
+            <line>
+              <![CDATA[Verify User Signed In And Home Page Is Displayed.]]>
+            </line>
+            <line>
+              <![CDATA[Mouse over to Women.]]>
+            </line>
+            <line>
+              <![CDATA[Click on Summer Dresses Button.]]>
+            </line>
+            <line>
+              <![CDATA[ <a href='C:\Users\admin\AppData\Local\Temp\screenshot6111407698395362126.png'> <screenshot src='C:\Users\admin\AppData\Local\Temp\screenshot6111407698395362126.png' height='200' width='200'/> </a>  ]]>
+            </line>
           </reporter-output>
         </test-method> <!-- TCID_102_VerifyProductIsAddedToCart -->
-        <test-method status="PASS" signature="TCID_103_GetAllLinksOnSummerDressesPage()[pri:3, instance:com.scripts.AutomationPracticeTest@43814d18]" name="TCID_103_GetAllLinksOnSummerDressesPage" duration-ms="4" started-at="2021-12-27T07:50:34Z" finished-at="2021-12-27T07:50:34Z">
+        <test-method status="PASS" signature="TCID_103_GetAllLinksOnSummerDressesPage()[pri:3, instance:com.scripts.AutomationPracticeTest@ae45eb6]" name="TCID_103_GetAllLinksOnSummerDressesPage" duration-ms="3" started-at="2021-12-28T16:14:27Z" finished-at="2021-12-28T16:14:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TCID_103_GetAllLinksOnSummerDressesPage -->
-        <test-method status="PASS" signature="TCID_104_VerifyAllLinksOnPage()[pri:4, instance:com.scripts.AutomationPracticeTest@43814d18]" name="TCID_104_VerifyAllLinksOnPage" duration-ms="5067" started-at="2021-12-27T07:50:34Z" finished-at="2021-12-27T07:50:39Z">
+        <test-method status="PASS" signature="TCID_104_VerifyAllLinksOnPage()[pri:4, instance:com.scripts.AutomationPracticeTest@ae45eb6]" name="TCID_104_VerifyAllLinksOnPage" duration-ms="3" started-at="2021-12-28T16:14:27Z" finished-at="2021-12-28T16:14:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TCID_104_VerifyAllLinksOnPage -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.scripts.AutomationPracticeTest@43814d18]" name="afterMethod" is-config="true" duration-ms="269" started-at="2021-12-27T07:50:39Z" finished-at="2021-12-27T07:50:39Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.scripts.AutomationPracticeTest@ae45eb6]" name="afterMethod" is-config="true" duration-ms="513" started-at="2021-12-28T16:14:27Z" finished-at="2021-12-28T16:14:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
       </class> <!-- com.scripts.AutomationPracticeTest -->
-    </test> <!-- Automation Practice Test -->
-  </suite> <!-- AutomationPracticeSuite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

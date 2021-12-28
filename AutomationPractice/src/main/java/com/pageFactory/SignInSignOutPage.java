@@ -13,7 +13,6 @@ public class SignInSignOutPage {
 	public SignInSignOutPage(BaseTest baseTest) {
 		this.objBaseTest = baseTest;
 	}
-
 	// Locators
 	By loc_inpUsername = By.xpath("//input[@id='email']");
 	By loc_inpPassword = By.xpath("//input[@id='passwd']");
