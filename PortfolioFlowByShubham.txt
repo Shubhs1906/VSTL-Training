@@ -1,0 +1,256 @@
+package com.flows;
+
+import java.util.ArrayList;
+
+import com.generic.Pojo;
+import com.pageFactory.PortfolioPageByShubham;
+import com.popupFactory.AddFolderPopupPageByShubham;
+import com.popupFactory.NewProductPopupPageByShubham;
+import com.popupFactory.OpenProductPopupPageByShubham;
+
+public class PortfolioFlowByShubham {
+
+	// Global Variable
+	private Pojo objPojo;
+	private String testData = "", testData_1 = "", testData_2 = "";
+	private String strReturnVal = "";
+	String strReturnFolderType;
+	String strReturnFolderVersion;
+	ArrayList<String> lstofFolderVersions = null;
+
+	// Reference object of Pages
+	private DashboardFlowByShubham objDashboardFlowByShubham;
+	private PortfolioPageByShubham objPortfolioPageByShubham;
+	private AddFolderPopupPageByShubham objAddFolderPopupPageByShubham;
+	private NewProductPopupPageByShubham objNewProductPopupPageByShubham;
+	private OpenProductPopupPageByShubham objOpenProductPopupPageByShubham;
+
+	// Constructor of class
+	public PortfolioFlowByShubham(Pojo pojo) {
+		this.objPojo = pojo;
+		objDashboardFlowByShubham = new DashboardFlowByShubham(objPojo);
+		objPortfolioPageByShubham = new PortfolioPageByShubham(objPojo);
+		objAddFolderPopupPageByShubham = new AddFolderPopupPageByShubham(objPojo);
+		objNewProductPopupPageByShubham = new NewProductPopupPageByShubham(objPojo);
+		objOpenProductPopupPageByShubham = new OpenProductPopupPageByShubham(objPojo);
+
+	}
+
+	public String createNewFolderUnderPortfolio() {
+		testData = objPojo.getObjUtilities().dpString("PortfolioGrid");
+		if (!testData.equals("")) {
+			objPortfolioPageByShubham.clickGridMenuOnPortfolioPage(testData);
+		}
+		objAddFolderPopupPageByShubham.verifyAddFolderPopupHeaderIsDisplayed();
+		testData = objPojo.getObjUtilities().dpString("FolderName");
+		if (!testData.equals("")) {
+			strReturnVal = objAddFolderPopupPageByShubham.enterFolderNameOnCreateFolderPopup(testData);
+		}
+		testData = objPojo.getObjUtilities().dpString("Year");
+		testData_1 = objPojo.getObjUtilities().dpString("Month");
+		testData_2 = objPojo.getObjUtilities().dpString("Date");
+		if (!testData.equals("") & !testData_1.equals("") & !testData_2.equals("")) {
+			objAddFolderPopupPageByShubham.selectDateonCreateFolderPopup(testData, testData_1, testData_2);
+		}
+		testData = objPojo.getObjUtilities().dpString("Category");
+		if (!testData.equals("")) {
+			objAddFolderPopupPageByShubham.selectCategoryFromDropdownOnCreateFolderPopup(testData);
+		}
+		testData = objPojo.getObjUtilities().dpString("FolderView");
+		if (!testData.equals("")) {
+			objAddFolderPopupPageByShubham.selectFolderViewFromDropdownOnCreateFolderPopup(testData);
+		}
+		objAddFolderPopupPageByShubham.clickSaveButtonOnFolderPopup();
+		return strReturnVal;
+	}
+
+	public String createNewProduct() {
+		objPortfolioPageByShubham.clickOnPlusIconToCreateNewProduct();
+		objNewProductPopupPageByShubham.checkNewProductPopupIsVisible();
+		testData = objPojo.getObjUtilities().dpString("SelectFolderType");
+		if (!testData.equals("")) {
+			strReturnFolderType = objNewProductPopupPageByShubham.selectFolderTypeValuefromDropdown(testData);
+		}
+		testData = objPojo.getObjUtilities().dpString("SelectFolder");
+		if (!testData.equals("")) {
+			objNewProductPopupPageByShubham.selectFolderValuefromDropdown(testData);
+		}
+		testData = objPojo.getObjUtilities().dpString("SelectFolderVersion");
+		if (!testData.equals("")) {
+			strReturnFolderVersion = objNewProductPopupPageByShubham.selectFolderVersionValuefromDropdown(testData);
+		}
+		testData = objPojo.getObjUtilities().dpString("SelectProduct");
+		if (!testData.equals("")) {
+			strReturnVal = objNewProductPopupPageByShubham.selectProductValuefromDropdown(testData);
+		}
+		objNewProductPopupPageByShubham.setProductName(strReturnVal);
+		objNewProductPopupPageByShubham.clickOnSubmitButtonOfNewProductPopup();
+
+		return strReturnVal;
+	}
+
+	public void openPlanInSOTViewWithVersion2020() {
+		objDashboardFlowByShubham.selectMenuItemFromLeftSideBar();
+		objPortfolioPageByShubham.verifyHeaderOfPage();
+		this.createNewFolderUnderPortfolio();
+		this.createNewProduct();
+		objPortfolioPageByShubham.clickOnOpenProductButton();
+		objOpenProductPopupPageByShubham.verifyOpenProductPopupPageIsDisplayed();
+		objOpenProductPopupPageByShubham.clickOnCheckBoxInOpenProductPopupPage();
+		objOpenProductPopupPageByShubham.clickOnFolderVersionsDropdown();
+		lstofFolderVersions = objOpenProductPopupPageByShubham.getFoderVersionsFromOpenproductPopPage();
+		testData = objPojo.getObjUtilities().dpString("FolderVersionFromDrp_2020");
+		if (!testData.equals("")) {
+			if (lstofFolderVersions.contains(testData)) {
+				objOpenProductPopupPageByShubham.selectVersionFromFolderVersionsDropdown(testData);
+			} else {
+				objPojo.getObjUtilities().logReporter("Verify folder version is clickable or not", false);
+			}
+		}
+		if (objOpenProductPopupPageByShubham.isOpenButtonIsEnabledOrNot()) {
+			objOpenProductPopupPageByShubham.clickOnOpenButton();
+		} else {
+			objPojo.getObjUtilities().logReporter("Verify open button is clickable or not", false);
+		}
+	}
+
+	public void openPlanInSOTViewWithVersion2021() {
+		objDashboardFlowByShubham.selectMenuItemFromLeftSideBar();
+		objPortfolioPageByShubham.verifyHeaderOfPage();
+		// Create New folder 2021
+		testData = objPojo.getObjUtilities().dpString("PortfolioGrid");
+		if (!testData.equals("")) {
+			objPortfolioPageByShubham.clickGridMenuOnPortfolioPage(testData);
+		}
+		objAddFolderPopupPageByShubham.verifyAddFolderPopupHeaderIsDisplayed();
+		testData = objPojo.getObjUtilities().dpString("FolderName");
+		if (!testData.equals("")) {
+			strReturnVal = objAddFolderPopupPageByShubham.enterFolderNameOnCreateFolderPopup(testData);
+		}
+		testData = objPojo.getObjUtilities().dpString("Year_2021");
+		testData_1 = objPojo.getObjUtilities().dpString("Month");
+		testData_2 = objPojo.getObjUtilities().dpString("Date");
+		if (!testData.equals("") & !testData_1.equals("") & !testData_2.equals("")) {
+			objAddFolderPopupPageByShubham.selectDateonCreateFolderPopup(testData, testData_1, testData_2);
+		}
+		testData = objPojo.getObjUtilities().dpString("Category");
+		if (!testData.equals("")) {
+			objAddFolderPopupPageByShubham.selectCategoryFromDropdownOnCreateFolderPopup(testData);
+		}
+		testData = objPojo.getObjUtilities().dpString("FolderView");
+		if (!testData.equals("")) {
+			objAddFolderPopupPageByShubham.selectFolderViewFromDropdownOnCreateFolderPopup(testData);
+		}
+		objAddFolderPopupPageByShubham.clickSaveButtonOnFolderPopup();
+		// Copy a product
+		objPortfolioPageByShubham.clickOnPlusIconToCreateNewProduct();
+		objNewProductPopupPageByShubham.checkNewProductPopupIsVisible();
+		testData = objPojo.getObjUtilities().dpString("SelectFolderType");
+		if (!testData.equals("")) {
+			objNewProductPopupPageByShubham.selectFolderTypeValuefromDropdown(testData);
+		}
+		testData = objPojo.getObjUtilities().dpString("SelectFolder");
+		if (!testData.equals("")) {
+			objNewProductPopupPageByShubham.selectFolderValuefromDropdown(testData);
+		}
+		testData = objPojo.getObjUtilities().dpString("SelectFolderVersion_2021");
+		if (!testData.equals("")) {
+			objNewProductPopupPageByShubham.selectFolderVersionValuefromDropdown(testData);
+		}
+		testData = objPojo.getObjUtilities().dpString("SelectProduct");
+		if (!testData.equals("")) {
+			strReturnVal = objNewProductPopupPageByShubham.selectProductValuefromDropdown(testData);
+		}
+		objNewProductPopupPageByShubham.setProductName(strReturnVal);
+		objNewProductPopupPageByShubham.clickOnSubmitButtonOfNewProductPopup();
+		objPortfolioPageByShubham.clickOnOpenProductButton();
+		objOpenProductPopupPageByShubham.verifyOpenProductPopupPageIsDisplayed();
+		objOpenProductPopupPageByShubham.clickOnCheckBoxInOpenProductPopupPage();
+		objOpenProductPopupPageByShubham.clickOnFolderVersionsDropdown();
+		lstofFolderVersions = objOpenProductPopupPageByShubham.getFoderVersionsFromOpenproductPopPage();
+		testData = objPojo.getObjUtilities().dpString("FolderVersionFromDrp_2021");
+		if (!testData.equals("")) {
+			if (lstofFolderVersions.contains(testData)) {
+				objOpenProductPopupPageByShubham.selectVersionFromFolderVersionsDropdown(testData);
+			} else {
+				objPojo.getObjUtilities().logReporter("Verify folder version is clickable or not", false);
+			}
+		}
+		if (objOpenProductPopupPageByShubham.isOpenButtonIsEnabledOrNot()) {
+			objOpenProductPopupPageByShubham.clickOnOpenButton();
+		} else {
+			objPojo.getObjUtilities().logReporter("Verify open button is clickable or not", false);
+		}
+	}
+
+	public void openPlanInSOTViewWithVersion2022() {
+		objDashboardFlowByShubham.selectMenuItemFromLeftSideBar();
+		objPortfolioPageByShubham.verifyHeaderOfPage();
+		// Create New folder
+		testData = objPojo.getObjUtilities().dpString("PortfolioGrid");
+		if (!testData.equals("")) {
+			objPortfolioPageByShubham.clickGridMenuOnPortfolioPage(testData);
+		}
+		objAddFolderPopupPageByShubham.verifyAddFolderPopupHeaderIsDisplayed();
+		testData = objPojo.getObjUtilities().dpString("FolderName");
+		if (!testData.equals("")) {
+			strReturnVal = objAddFolderPopupPageByShubham.enterFolderNameOnCreateFolderPopup(testData);
+		}
+		testData = objPojo.getObjUtilities().dpString("Year_2022");
+		testData_1 = objPojo.getObjUtilities().dpString("Month");
+		testData_2 = objPojo.getObjUtilities().dpString("Date");
+		if (!testData.equals("") & !testData_1.equals("") & !testData_2.equals("")) {
+			objAddFolderPopupPageByShubham.selectDateonCreateFolderPopup(testData, testData_1, testData_2);
+		}
+		testData = objPojo.getObjUtilities().dpString("Category");
+		if (!testData.equals("")) {
+			objAddFolderPopupPageByShubham.selectCategoryFromDropdownOnCreateFolderPopup(testData);
+		}
+		testData = objPojo.getObjUtilities().dpString("FolderView");
+		if (!testData.equals("")) {
+			objAddFolderPopupPageByShubham.selectFolderViewFromDropdownOnCreateFolderPopup(testData);
+		}
+		objAddFolderPopupPageByShubham.clickSaveButtonOnFolderPopup();
+		// Copy a product
+		objPortfolioPageByShubham.clickOnPlusIconToCreateNewProduct();
+		objNewProductPopupPageByShubham.checkNewProductPopupIsVisible();
+		testData = objPojo.getObjUtilities().dpString("SelectFolderType");
+		if (!testData.equals("")) {
+			objNewProductPopupPageByShubham.selectFolderTypeValuefromDropdown(testData);
+		}
+		testData = objPojo.getObjUtilities().dpString("SelectFolder");
+		if (!testData.equals("")) {
+			objNewProductPopupPageByShubham.selectFolderValuefromDropdown(testData);
+		}
+		testData = objPojo.getObjUtilities().dpString("SelectFolderVersion_2022");
+		if (!testData.equals("")) {
+			objNewProductPopupPageByShubham.selectFolderVersionValuefromDropdown(testData);
+		}
+		testData = objPojo.getObjUtilities().dpString("SelectProduct");
+		if (!testData.equals("")) {
+			strReturnVal = objNewProductPopupPageByShubham.selectProductValuefromDropdown(testData);
+		}
+		objNewProductPopupPageByShubham.setProductName(strReturnVal);
+		objNewProductPopupPageByShubham.clickOnSubmitButtonOfNewProductPopup();
+		objPortfolioPageByShubham.clickOnOpenProductButton();
+		objOpenProductPopupPageByShubham.verifyOpenProductPopupPageIsDisplayed();
+		objOpenProductPopupPageByShubham.clickOnCheckBoxInOpenProductPopupPage();
+		objOpenProductPopupPageByShubham.clickOnFolderVersionsDropdown();
+		objOpenProductPopupPageByShubham.clickOnFolderVersionsDropdown();
+		lstofFolderVersions = objOpenProductPopupPageByShubham.getFoderVersionsFromOpenproductPopPage();
+		testData = objPojo.getObjUtilities().dpString("FolderVersionFromDrp_2022");
+		if (!testData.equals("")) {
+			if (lstofFolderVersions.contains(testData)) {
+				objOpenProductPopupPageByShubham.selectVersionFromFolderVersionsDropdown(testData);
+			} else {
+				objPojo.getObjUtilities().logReporter("Verify folder version is clickable or not", false);
+			}
+		}
+		if (objOpenProductPopupPageByShubham.isOpenButtonIsEnabledOrNot()) {
+			objOpenProductPopupPageByShubham.clickOnOpenButton();
+		} else {
+			objPojo.getObjUtilities().logReporter("Verify open button is clickable or not", false);
+		}
+	}
+
+}
