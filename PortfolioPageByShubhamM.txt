@@ -1,0 +1,69 @@
+package com.pageFactory;
+
+import org.openqa.selenium.By;
+
+import com.generic.Pojo;
+
+public class PortfolioPageByShubhamM {
+
+	// Global Variables
+	private Pojo objPojo;
+
+	// Constructor of class
+	public PortfolioPageByShubhamM(Pojo pojo) {
+		this.objPojo = pojo;
+	}
+
+	By loc_nextPage = By.xpath("//span[@class='ui-icon ui-icon-seek-next']");
+
+	public void clickOnFolderOnPortfolioPage(String strFolderName) {
+		By locator = By
+				.xpath("//div//tr//td[@aria-describedby='pdg_FolderName'][contains(text(),'" + strFolderName + "')]");
+		
+		if(objPojo.getObjWrapperFunctions().checkElementDisplayed(locator)==false){
+		do{objPojo.getObjWrapperFunctions().click(loc_nextPage);
+			
+		}while(objPojo.getObjWrapperFunctions().checkElementDisplayed(locator));
+		}
+		
+		objPojo.getObjUtilities().logReporter("Verify user can click on Folder",
+				"User should be able to click on Folder '" + strFolderName + "'",
+				"User is able to click on Folder '" + strFolderName + "'",
+				objPojo.getObjWrapperFunctions().click(locator));
+	}
+
+	public void clickOnFolderActionButtonOnPortfolioPage(String strFolderAction) {
+
+		By locator = By.xpath("//tr//td[@title='" + strFolderAction + "']");
+		objPojo.getObjWrapperFunctions().checkElementDisplayed(locator);
+		objPojo.getObjUtilities().logReporter("Verify user can click on folder action button",
+				"User should be able to click on folder action button '" + strFolderAction + "'",
+				"User is able to click on folder action button '" + strFolderAction + "'",
+				objPojo.getObjWrapperFunctions().click(locator));
+
+	}
+	
+	public void clickOnProductActionButtonOnPortfolioPage(String strProductAction) {
+
+		By locator = By.xpath("//button[@title='"+strProductAction+"']");
+		objPojo.getObjWrapperFunctions().checkElementDisplayed(locator);
+		objPojo.getObjUtilities().logReporter("Verify user can click on product action button",
+				"User should be able to click on product action button '" + strProductAction + "'",
+				"User is able to click on product action button '" + strProductAction + "'",
+				objPojo.getObjWrapperFunctions().click(locator));
+
+	}
+	
+	public void selectDrop(String strProductAction) {
+
+		By locator = By.xpath("//button[@title='"+strProductAction+"']");
+		objPojo.getObjWrapperFunctions().checkElementDisplayed(locator);
+		objPojo.getObjUtilities().logReporter("Verify user can click on product action button",
+				"User should be able to click on product action button '" + strProductAction + "'",
+				"User is able to click on product action button '" + strProductAction + "'",
+				objPojo.getObjWrapperFunctions().click(locator));
+
+	}
+	
+
+}

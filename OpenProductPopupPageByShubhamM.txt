@@ -1,0 +1,53 @@
+package com.popupFactory;
+
+
+
+import org.openqa.selenium.By;
+import com.generic.Pojo;
+
+public class OpenProductPopupPageByShubhamM {
+
+	// Global Variables
+	private Pojo objPojo;
+
+	public OpenProductPopupPageByShubhamM(Pojo pojo) {
+		this.objPojo = pojo;
+	}
+
+	By loc_hdrOpenProduct = By.xpath("//div//span[text()='Open Product']");
+	By loc_checkboxSelect = By.xpath("//div[contains(text(),'Select')]/following::input[@id='selectallcheckbox']");
+	By loc_drpFolderVersion = By.xpath("//table//select[@id='folderversionviewdropdown_1']");
+	By loc_btnOpen = By.xpath("//td//div[contains(text(),'Open')]");
+
+	public void verifyOpenProductPopupPageIsDisplayed() {
+		objPojo.getObjUtilities().logReporter("Verify user can see 'Open Product' popup page is displayed",
+				"User should be able to see the 'Open Product' header",
+				"User can is able to see the 'Open Product' header",
+				objPojo.getObjWrapperFunctions().checkElementDisplayed(loc_hdrOpenProduct));
+	}
+
+	public void clickOnCheckBoxSelectOnOpenProductPopupPage() {
+		objPojo.getObjWrapperFunctions().waitForLoaderToDisappear();
+		objPojo.getObjUtilities().logReporter("Verify user can click on checkbox ",
+				"User should be able to click on checkbox", "User can click on checkbox",
+				objPojo.getObjWrapperFunctions().click(loc_checkboxSelect));
+	}
+
+	public void selectDropdownFromFolderVersion(String strFolderVersion) {
+
+		objPojo.getObjUtilities().logReporter("Verify user can select dropdown from folderversion ",
+				"User should be able to select dropdown from folderversion",
+				"User can select dropdown from folderversion",
+				objPojo.getObjWrapperFunctions().selectDropDownOption(loc_drpFolderVersion, strFolderVersion, "text"));
+
+	}
+
+	public void clickOnOpenButton() {
+		objPojo.getObjWrapperFunctions().checkElementDisplayed(loc_btnOpen);
+		objPojo.getObjUtilities().logReporter("Verify user can click on open button",
+				"user should be able to click on open button", "User is able to click on open button",
+				objPojo.getObjWrapperFunctions().click(loc_btnOpen));
+		objPojo.getObjWrapperFunctions().waitForLoaderToDisappear();
+	}
+
+}
