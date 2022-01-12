@@ -1,0 +1,105 @@
+package com.pageFactory;
+
+import org.openqa.selenium.By;
+
+import com.generic.Pojo;
+
+public class PortfolioPageByShubhamM {
+
+	// Global Variables
+	private Pojo objPojo;
+
+	// Constructor of class
+	public PortfolioPageByShubhamM(Pojo pojo) {
+		this.objPojo = pojo;
+	}
+
+	By loc_nextPage = By.xpath("//span[@class='ui-icon ui-icon-seek-next']");
+	By loc_searchField = By.xpath("//thead//input[@placeholder='Search for fields..']");
+
+	public void clickOnFolderOnPortfolioPage(String strFolderName) {
+		By locator = By.xpath("//div//tr//td[@aria-describedby='pdg_FolderName'][(text()='" + strFolderName + "')]");
+
+		if (objPojo.getObjWrapperFunctions().checkElementDisplayed(locator) == false) {
+
+			for (objPojo.getObjWrapperFunctions()
+					.click(loc_nextPage); !objPojo.getObjWrapperFunctions().checkElementDisplayed(locator);) {
+				objPojo.getObjWrapperFunctions().click(loc_nextPage);
+			}
+
+		}
+
+		objPojo.getObjUtilities().logReporter("Verify user can click on Folder",
+				"User should be able to click on Folder '" + strFolderName + "'",
+				"User is able to click on Folder '" + strFolderName + "'",
+				objPojo.getObjWrapperFunctions().click(locator));
+	}
+
+	public void clickOnFolderActionButtonOnPortfolioPage(String strFolderAction) {
+
+		By locator = By.xpath("//tr//td[@title='" + strFolderAction + "']");
+		objPojo.getObjWrapperFunctions().checkElementDisplayed(locator);
+		objPojo.getObjUtilities().logReporter("Verify user can click on folder action button",
+				"User should be able to click on folder action button '" + strFolderAction + "'",
+				"User is able to click on folder action button '" + strFolderAction + "'",
+				objPojo.getObjWrapperFunctions().click(locator));
+		objPojo.getObjWrapperFunctions().waitForLoaderToDisappear();
+
+	}
+
+	public void clickOnProductActionButtonOnPortfolioPage(String strProductAction) {
+
+		By locator = By.xpath("//button[@title='" + strProductAction + "']");
+		objPojo.getObjWrapperFunctions().checkElementDisplayed(locator);
+		objPojo.getObjUtilities().logReporter("Verify user can click on product action button",
+				"User should be able to click on product action button '" + strProductAction + "'",
+				"User is able to click on product action button '" + strProductAction + "'",
+				objPojo.getObjWrapperFunctions().click(locator));
+		objPojo.getObjWrapperFunctions().waitForLoaderToDisappear();
+
+	}
+
+	public void searchField(String strField) {
+		objPojo.getObjUtilities().logReporter("Verify user can input text in Field search",
+				"User should be able to input text '" + strField + "' in Field search ",
+				"User is able to input text '" + strField + "' in Field search ",
+				objPojo.getObjWrapperFunctions().setText(loc_searchField, strField));
+
+		objPojo.getObjWrapperFunctions().sendKeyBoardKeys(loc_searchField, "enter");
+
+		objPojo.getObjWrapperFunctions().waitForLoaderToDisappear();
+	}
+
+	public void editField(String strField, String strSelectDrpDwn) {
+		strField = strField.replaceAll("\\s", "");
+		By locator = By.xpath("//div/select[@data-journal='SECTIONASECTIONA1." + strField + "']");
+		objPojo.getObjWrapperFunctions().selectDropDownOption(locator, strSelectDrpDwn, "text");
+	}
+
+	public void verifyEditedFieldIsSaved(String strField,String strSelectDrpDwn) {
+		
+		By locator = By.xpath("//div/select[@data-journal='SECTIONASECTIONA1." + strField.replaceAll("\\s", "") + "']");
+		
+		objPojo.getObjUtilities().logReporter("Verify user can see edited Field ",
+				"User should be able to see edited Field '" + strField + "' in Plan ",
+				"User is able to see edited Field '" + strField + "' in Plan ",
+				strSelectDrpDwn.equals(objPojo.getObjWrapperFunctions().getSelectedValueFromDropDown(locator)));
+		
+		;
+	}
+
+	
+	
+	
+	
+	
+	
+	
+	/*
+	 * public void editField(String strField,String strInputValue,String
+	 * strNull) { strField=strField.replaceAll("\\s", ""); By locator =
+	 * By.xpath("//div/input[@data-journal='SECTIONASECTIONA1."+strField+"']");
+	 * objPojo.getObjWrapperFunctions().setText(locator, strInputValue); }
+	 */
+
+}
